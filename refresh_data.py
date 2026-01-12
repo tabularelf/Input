@@ -26,7 +26,7 @@ DATA_SOURCES = {
                 "match id": "MAKE_CONTROLLER_ID\((.*),(.*)\),k_eControllerType_" + marker_id + ",",
             },
             "Community SDL2 typelist": {
-                "source": github_urlpath + "offalynne/Input/community-data/community_gamepad_type.txt",
+                "source": "https://codeberg.org/offalynne/Input/raw/branch/community-data/community_gamepad_type.txt",
                 "match category": "(?<=.{10})(.{1,})(?= //.*)",
                 "match id": "(.{4}),(.{4})," + marker_id,
             }
