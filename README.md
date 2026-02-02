@@ -16,4 +16,4 @@
 <hr>
 
 <h3 align="center">Please consider <a href="https://www.patreon.com/AlynneKeith">supporting on Patreon</a> or <a href="https://ko-fi.com/offalynne">tipping on Kofi</a> 🤝</h3>
-<p align="center">Input archive releases for GameMaker Monthly are <a href="https://github.com/offalynne/Input/releases">available on GitHub</a><br>Input Legacy archive for GameMaker LTS 2022: <a href="https://github.com/offalynne/Input-Legacy">Code</a>, <a href="https://offalynne.grebedoc.dev/Input/#/8.1/">Documentation</a>, <a href="https://github.com/offalynne/Input-Legacy/releases/tag/8.1.4">Release (.yymps)</a></p>
+<p align="center">Archived releases for GameMaker Monthly are <a href="https://github.com/offalynne/Input/releases">available on GitHub</a><br>Input Legacy archive for GameMaker LTS 2022: <a href="https://github.com/offalynne/Input-Legacy">Code</a>, <a href="https://offalynne.grebedoc.dev/Input/#/8.1/">Documentation</a>, <a href="https://github.com/offalynne/Input-Legacy/releases/tag/8.1.4">Release (.yymps)</a></p>
