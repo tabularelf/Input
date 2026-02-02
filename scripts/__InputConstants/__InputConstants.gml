@@ -14,10 +14,10 @@
 #macro INPUT_VERSION  "10.3.1"
 #macro INPUT_DATE     "2026-30-01"
 
-#macro INPUT_NO_DEVICE       -666
-#macro INPUT_KBM             -1
-#macro INPUT_TOUCH           -2
-#macro INPUT_GENERIC_DEVICE  -3
+#macro INPUT_NO_DEVICE       -1
+#macro INPUT_KBM             -100
+#macro INPUT_TOUCH           -200
+#macro INPUT_GENERIC_DEVICE  -300
 
 #macro INPUT_ALL_PLAYERS  -3
 
