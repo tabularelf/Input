@@ -1,6 +1,6 @@
 <p align="center"><img src="https://codeberg.org/offalynne/Input/raw/branch/main/LOGO.png" width="300"></p>
 
-<h1 align="center">Input 10.3.0</h1>
+<h1 align="center">Input 10.3.1</h1>
 
 <p align="center">Comprehensive cross-platform input for GameMaker 2024.14 by <a href="https://www.jujuadams.com/" target="_blank">Juju Adams</a>, <a href="https://offalynne.neocities.org/">Alynne Keith</a>, and <a href="https://offalynne.codeberg.page/Input/#/10.3/Credits">Friends</a></p>
 
