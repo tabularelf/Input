@@ -11,7 +11,7 @@
 //                                                                        //
 ////////////////////////////////////////////////////////////////////////////
 
-#macro INPUT_VERSION  "10.3.0"
+#macro INPUT_VERSION  "10.3.1"
 #macro INPUT_DATE     "2026-30-01"
 
 #macro INPUT_NO_DEVICE       -666
