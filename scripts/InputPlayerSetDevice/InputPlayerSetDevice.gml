@@ -45,6 +45,16 @@ function InputPlayerSetDevice(_device, _playerIndex = 0)
         }
     }
     
+    if (INPUT_ON_XBOX && INPUT_XBOX_SIMPLIFIED_USER_MODEL)
+    {
+        if ((_playerIndex != 0) && (_device != INPUT_NO_DEVICE))
+        {
+            //No other players can have a device
+            _device = INPUT_NO_DEVICE;
+            __InputTrace($"Warning! Player {_playerIndex} cannot have a device due to `INPUT_XBOX_SIMPLIFIED_USER_MODEL`");
+        }
+    }
+    
     var _oldDevice = _playerArray[_playerIndex].__device;
     
     //Don't do any work if the device hasn't changed
