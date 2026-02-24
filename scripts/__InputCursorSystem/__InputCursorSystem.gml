@@ -18,11 +18,11 @@ function __InputCursorSystem()
         {
             if (INPUT_CURSOR_CLUSTER < 0)
             {            
-                InputPlugInWarning("Invalid Cursor Cluster Index: \"", INPUT_CURSOR_CLUSTER, "\"");
+                InputPlugInWarning("Invalid cursor cluster index (", INPUT_CURSOR_CLUSTER, ")");
             }
             else
             {
-                InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.UPDATE, -1, function(_playerIndex)
+                InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.UPDATE, -1, function()
                 {
                     var _i = 0;
                     repeat(INPUT_MAX_PLAYERS)
