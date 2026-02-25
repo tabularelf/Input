@@ -58,6 +58,10 @@ function __InputRegisterCollectPlayer()
                     var _minRight = __thresholdMinArray[INPUT_THRESHOLD.RIGHT];
                     var _maxRight = __thresholdMaxArray[INPUT_THRESHOLD.RIGHT];
                     
+                    //Prevent div-by-zero
+                    _maxLeft  = max(_minLeft  + math_get_epsilon(), _maxLeft);
+                    _maxRight = max(_minRight + math_get_epsilon(), _maxRight);
+                    
                     __lastConnectedGamepadType = InputDeviceGetGamepadType(_device);
                     var _hotswapBlocked = false;
                     
