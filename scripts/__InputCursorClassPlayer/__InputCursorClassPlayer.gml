@@ -40,20 +40,29 @@ function __InputCursorClassPlayer(_playerIndex) constructor
         
         if (INPUT_CURSOR_MOUSE_CONTROL && InputPlayerUsingKbm(_playerIndex))
         {
-            if (INPUT_CURSOR_PRIMARY_COORD_SPACE == INPUT_CURSOR_ROOM_SPACE)
+            if (window_mouse_get_locked())
             {
-                _nextX = InputMouseRoomX();
-                _nextY = InputMouseRoomY();
+                var _result = __InputCursorTransformCoordinate(window_mouse_get_delta_x(), window_mouse_get_delta_y(), INPUT_CURSOR_DEVICE_SPACE, INPUT_CURSOR_PRIMARY_COORD_SPACE);
+                _nextX += _result.x;
+                _nextY += _result.y;
             }
-            else if (INPUT_CURSOR_PRIMARY_COORD_SPACE == INPUT_CURSOR_GUI_SPACE)
+            else
             {
-                _nextX = InputMouseGuiX();
-                _nextY = InputMouseGuiY();
-            }
-            else if (INPUT_CURSOR_PRIMARY_COORD_SPACE == INPUT_CURSOR_DEVICE_SPACE)
-            {
-                _nextX = InputMouseDeviceX();
-                _nextY = InputMouseDeviceY();
+                if (INPUT_CURSOR_PRIMARY_COORD_SPACE == INPUT_CURSOR_ROOM_SPACE)
+                {
+                    _nextX = InputMouseRoomX();
+                    _nextY = InputMouseRoomY();
+                }
+                else if (INPUT_CURSOR_PRIMARY_COORD_SPACE == INPUT_CURSOR_GUI_SPACE)
+                {
+                    _nextX = InputMouseGuiX();
+                    _nextY = InputMouseGuiY();
+                }
+                else if (INPUT_CURSOR_PRIMARY_COORD_SPACE == INPUT_CURSOR_DEVICE_SPACE)
+                {
+                    _nextX = InputMouseDeviceX();
+                    _nextY = InputMouseDeviceY();
+                }
             }
         }
         else
