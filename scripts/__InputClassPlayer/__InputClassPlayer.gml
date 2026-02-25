@@ -95,6 +95,8 @@ function __InputClassPlayer(_playerIndex) constructor
     
     __consumedArray = [];
     
+    __UpdateClusterThresholds();
+    
     
     
     static __UpdateStatus = function()
