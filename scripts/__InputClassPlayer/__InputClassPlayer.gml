@@ -95,6 +95,8 @@ function __InputClassPlayer(_playerIndex) constructor
     
     __consumedArray = [];
     
+    __UpdateClusterThresholds();
+    
     
     
     static __UpdateStatus = function()
@@ -126,6 +128,18 @@ function __InputClassPlayer(_playerIndex) constructor
         }
         
         return _connected;
+    }
+    
+    static __SetMinThreshold = function(_type, _value)
+    {
+        __thresholdMinArray[@ _type] = _value;
+        __thresholdMaxArray[@ _type] = max(_value, __thresholdMaxArray[_type]);
+    }
+    
+    static __SetMaxThreshold = function(_type, _value)
+    {
+        __thresholdMinArray[@ _type] = min(_value, __thresholdMinArray[_type]);
+        __thresholdMaxArray[@ _type] = _value;
     }
     
     static __UpdateClusterThresholds = function()
