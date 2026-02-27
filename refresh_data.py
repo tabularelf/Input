@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 # Gamepad data refresher for Input
-# https://github.com/offalynne/Input, 2025
+# https://codeberg.org/offalynne/Input, 2025
 
 import sys
 if sys.version_info[0] != 3:
