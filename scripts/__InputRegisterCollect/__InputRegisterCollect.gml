@@ -20,11 +20,11 @@ function __InputRegisterCollect()
             {
                 InputPlayerSetDevice(INPUT_TOUCH);
             }
-            else if (INPUT_ON_DESKTOP)
+            else if (INPUT_ON_DESKTOP && (not InputGetSteamInfo(INPUT_STEAM_INFO.STEAM_DECK)))
             {
                 InputPlayerSetDevice(INPUT_KBM);
             }
-            else if (INPUT_ON_CONSOLE)
+            else if (INPUT_ON_CONSOLE || (INPUT_ON_DESKTOP && InputGetSteamInfo(INPUT_STEAM_INFO.STEAM_DECK)))
             {
                 //Force a gamepad update otherwise we won't be aware of any connected devices
                 __InputUpdateGamepadPresence();
