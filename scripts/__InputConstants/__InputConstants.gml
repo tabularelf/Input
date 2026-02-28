@@ -82,6 +82,7 @@ enum INPUT_STEAM_INFO
 {
     STEAMWORKS,
     STEAM_DECK,
+    BIG_PICTURE,
     ON_WINE,
 }
 

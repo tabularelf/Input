@@ -6,6 +6,7 @@ function __InputInitializeSteam()
     {
         __usingSteam      = false;
         __usingSteamworks = false;
+        __usingBigPicture = false;
         __onSteamDeck     = false;
         __onWINE          = false;
         
@@ -26,6 +27,7 @@ function __InputInitializeSteam()
         {
             //Using Steamworks extension
             __usingSteamworks = steam_input_init(true);
+            __usingBigPicture = steam_utils_is_steam_in_big_picture_mode();
             __onSteamDeck     = steam_utils_is_steam_running_on_steam_deck();
         }
         catch(_error)
