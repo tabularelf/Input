@@ -10,6 +10,8 @@ function __InputRegisterCollect()
         
         static _once = (function()
         {
+            var _system = __InputSystem();
+            
             //Set a default device for player 0 on boot. This should only happen once
             //Juju: Because setting the player's device triggers a plug-in callback, it's possible for plug-ins
             //      to accidentally create a loop of static initializations that results in a crash on boot.
@@ -20,11 +22,11 @@ function __InputRegisterCollect()
             {
                 InputPlayerSetDevice(INPUT_TOUCH);
             }
-            else if (INPUT_ON_DESKTOP && (not InputGetSteamInfo(INPUT_STEAM_INFO.STEAM_DECK)))
+            else if (INPUT_ON_DESKTOP && (not _system.__onSteamDeck) && (not _system.__usingBigPicture))
             {
                 InputPlayerSetDevice(INPUT_KBM);
             }
-            else if (INPUT_ON_CONSOLE || (INPUT_ON_DESKTOP && InputGetSteamInfo(INPUT_STEAM_INFO.STEAM_DECK)))
+            else if (INPUT_ON_CONSOLE || (INPUT_ON_DESKTOP && (_system.__onSteamDeck || _system.__usingBigPicture)))
             {
                 //Force a gamepad update otherwise we won't be aware of any connected devices
                 __InputUpdateGamepadPresence();
