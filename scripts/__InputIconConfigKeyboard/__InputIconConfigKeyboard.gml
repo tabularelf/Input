@@ -1,5 +1,11 @@
 // Feather disable all
 
+/// This script defines return values for `InputIconGet()` and `InputIconGetDirect()` in situations
+/// where a player's current device is `INPUT_KBM` (KeyBoard and Mouse).
+/// 
+/// N.B. Icon return values need not be merely strings. You may define return values to be whatever
+///      datatype you like: strings, sprites, structs etc.
+
 ////////////////
 //            //
 //  Keyboard  //
