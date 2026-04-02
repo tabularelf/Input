@@ -6,11 +6,19 @@
 /// N.B. Icon return values need not be merely strings. You may define return values to be whatever
 ///      datatype you like: strings, sprites, structs etc.
 
-////////////////
-//            //
-//  Keyboard  //
-//            //
-////////////////
+///////////////////////
+//                   //
+//  Keyboard & Mouse //
+//                   //
+///////////////////////
+
+InputIconDefineKeyboard(mb_left,       "mouse left");
+InputIconDefineKeyboard(mb_middle,     "mouse middle");
+InputIconDefineKeyboard(mb_right,      "mouse right");
+InputIconDefineKeyboard(mb_side1,      "mouse 4");
+InputIconDefineKeyboard(mb_side2,      "mouse 5");
+InputIconDefineKeyboard(mb_wheel_down, "mouse wheel down");
+InputIconDefineKeyboard(mb_wheel_up,   "mouse wheel up");
 
 InputIconDefineKeyboard("A", "A");
 InputIconDefineKeyboard("B", "B");
