@@ -148,3 +148,8 @@
 // want to evaluate a tick of a fixed timestep or lockstep loop then call `InputManualUpdate()`
 // once and then you may call library functions within your custom update loop as normal.
 #macro INPUT_UPDATE_AFTER_COLLECT  true
+
+// Whether to enforce that only the first player can be assinged the `INPUT_KBM` device.
+// This is set to `true` by default. If this macro is set to `false` then any player can
+// be assigned the `INPUT_KBM` device via `InputPlayerSetDevice()` or the Party plug-in.
+#macro INPUT_KBM_FIRST_PLAYER_ONLY  true
