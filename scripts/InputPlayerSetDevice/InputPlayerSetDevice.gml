@@ -59,7 +59,7 @@ function InputPlayerSetDevice(_device, _playerIndex = 0)
     {
         if ((_device == INPUT_KBM) && (_playerIndex != 0))
         {
-            __InputError("Cannot set player ", _playerIndex, " device to ", _device, ", " due to `INPUT_KBM_FIRST_PLAYER_ONLY`");        
+            __InputError("Cannot set player ", _playerIndex, " device to ", _device, " due to `INPUT_KBM_FIRST_PLAYER_ONLY`");        
         }
     }
     

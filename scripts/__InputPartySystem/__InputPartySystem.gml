@@ -115,7 +115,7 @@ function __InputPartySystem()
                                     _p = 0;
                                     if (InputPlayerIsConnected(_p))
                                     {
-                                        __InputTrace("Removed device ", InputGetDevice(_p), " from player ", _p);
+                                        __InputTrace("Removed device ", InputPlayerGetDevice(_p), " from player ", _p);
                                     }
                                 }
                             }
