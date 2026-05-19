@@ -29,7 +29,7 @@ function __InputClassPlayer(_playerIndex) constructor
     {
         __lastConnectedGamepadType = INPUT_GAMEPAD_TYPE_NO_GAMEPAD;
     }
-    else if (INPUT_ON_SWITCH)
+    else if (INPUT_ON_SWITCH_X)
     {
         __lastConnectedGamepadType = INPUT_GAMEPAD_TYPE_SWITCH;
     }

@@ -17,7 +17,7 @@ function __InputGamepadDiscover(_gamepadStruct)
         __description  = gamepad_get_description(_device);
         __type         = INPUT_GAMEPAD_TYPE_UNKNOWN;
         
-        if (INPUT_ON_SWITCH)
+        if (INPUT_ON_SWITCH_X)
         {
             __type = __InputGamepadIdentifySwitchType(_device, __description, true);
             
