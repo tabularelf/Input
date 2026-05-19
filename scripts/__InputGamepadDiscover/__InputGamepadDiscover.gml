@@ -63,16 +63,8 @@ function __InputGamepadDiscover(_gamepadStruct)
                 {
                     //Single Joy-Cons in horizontal report L/R/ZL/ZR as shoulder buttons even though they rest in the player's palm. No idea why, but we disallow that
                     //Also it seems like GameMaker implements SL and SR weirdly so we circumvent that
-                    if (__type == INPUT_GAMEPAD_TYPE_JOYCON_LEFT)
-                    {
-                        InputPlugInGamepadSetMapping(_device, gp_shoulderl, function(_device) { return gamepad_button_value(_device, 16); });
-                        InputPlugInGamepadSetMapping(_device, gp_shoulderr, function(_device) { return gamepad_button_value(_device, 17); });
-                    }
-                    else
-                    {
-                        InputPlugInGamepadSetMapping(_device, gp_shoulderl, function(_device) { return gamepad_button_value(_device, 18); });
-                        InputPlugInGamepadSetMapping(_device, gp_shoulderr, function(_device) { return gamepad_button_value(_device, 19); });
-                    }
+                    InputPlugInGamepadSetMapping(_device, gp_shoulderl, function(_device) { return gamepad_button_value(_device, 6); });
+                    InputPlugInGamepadSetMapping(_device, gp_shoulderr, function(_device) { return gamepad_button_value(_device, 7); });
                 }
                 else
                 {
