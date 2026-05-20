@@ -39,7 +39,7 @@
 // enabled, only player 0 may have a device assigned to them. This macro corresponds to the
 // `InitialUserAlwaysLoggedIn` mode set in your `param.json`. Please note that this macro (and the
 // associated `param.json` mode) should only be used for single player games.
-#macro INPUT_PS5_SINGLE_USER  true
+#macro INPUT_PS5_SINGLE_USER  false
 
 // Whether the game has been set up for the Xbox "simplified user model". This will disconnect all
 // gamepads associated with users other than the activating user. Additionally, only player 0 may
@@ -47,7 +47,7 @@
 // the activating user will be accepted. You should only set this macro to `true` if the relevant
 // setting in Game Options has been enabled. Please note that this macro (and the associated Xbox
 // setting) should only be used for single player games.
-#macro INPUT_XBOX_SIMPLIFIED_USER_MODEL  true
+#macro INPUT_XBOX_SIMPLIFIED_USER_MODEL  false
 
 ////////////////
 //            //
