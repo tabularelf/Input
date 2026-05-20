@@ -9,6 +9,32 @@
 // library, set this macro to `false`.
 #macro INPUT_SAFETY_CHECKS  true
 
+/////////////////////////
+//                     //
+//  Platform-specific  //
+//                     //
+/////////////////////////
+
+// Whether to set "known good" controller settings on Switch and Switch 2. This will execute the
+// following code on boot:
+// 
+//     switch_controller_support_set_defaults();
+//     switch_controller_joycon_set_holdtype(switch_controller_joycon_holdtype_horizontal);
+//     switch_controller_set_supported_styles(switch_controller_handheld
+//                                          | switch_controller_joycon_left
+//                                          | switch_controller_joycon_right
+//                                          | switch_controller_joycon_dual
+//                                          | switch_controller_pro_controller);
+// 
+// This configuration sets up Switch in a stable working condition that allows for compatibility
+// across multiple input methods. You are, of course, welcome to adjust and amend these values
+// after boot or to simply turn this macro off.
+// 
+// N.B. At this time, Input does not support "mouse mode" Joy-cons. Please get in touch if you
+//      need mouse mode support.
+// 
+#macro INPUT_SWITCH_X_KNOWN_GOOD  true
+
 // Whether to only allow one PlayStation user to play the game when running on PlayStation 5. When
 // enabled, only player 0 may have a device assigned to them. This macro corresponds to the
 // `InitialUserAlwaysLoggedIn` mode set in your `param.json`. Please note that this macro (and the
