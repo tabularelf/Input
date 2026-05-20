@@ -1,25 +1,9 @@
 // Feather disable all
 
-
-//switch_controller_support_set_defaults();                // Reset any current settings the Switch might have
-//switch_controller_set_supported_styles( switch_controller_handheld
-//                                      | switch_controller_joycon_dual
-//                                      | switch_controller_joycon_left
-//                                      | switch_controller_joycon_right
-//                                      | switch_controller_joycon_mouse_dual
-//                                      | switch_controller_joycon_mouse_left
-//                                      | switch_controller_joycon_mouse_right
-//                                      | switch_controller_pro_controller );
-//switch_controller_support_set_all( false /* explainText */
-//                                 , false /* identificationColours */
-//                                 , true    /* leftJustifiedNumbers */
-//                                 , true /* permitJoyConDual */
-//                                 , true /* singleplayerOnly */
-//                                 , true /* maintainExistingConnections */
-//                                 , 1 /* minimumControllers */
-//                                 , 1 /* maximumControllers */);
-//switch_controller_joycon_set_holdtype( switch_controller_joycon_holdtype_horizontal );
-//switch_controller_support_show();
+if (INPUT_ON_SWITCH_X)
+{
+    switch_controller_start_lr_assignment();
+}
 
 bindingMap = ds_map_create();
 bindingMap[? gp_face1         ] = "gp_face1";
