@@ -15,21 +15,10 @@
 //                     //
 /////////////////////////
 
-// Whether to set "known good" controller settings on Switch and Switch 2. This will execute the
-// following code on boot:
-// 
-//     switch_controller_support_set_defaults();
-//     switch_controller_joycon_set_holdtype(switch_controller_joycon_holdtype_horizontal);
-//     switch_controller_set_default_joycon_assignment(switch_controller_joycon_assignment_single);
-//     switch_controller_set_supported_styles(switch_controller_handheld
-//                                          | switch_controller_joycon_left
-//                                          | switch_controller_joycon_right
-//                                          | switch_controller_joycon_dual
-//                                          | switch_controller_pro_controller);
-// 
-// This configuration sets up Switch in a stable working condition that allows for compatibility
-// across multiple input methods. You are, of course, welcome to adjust and amend these values
-// after boot or to simply turn this macro off.
+// Whether to set "known good" controller settings on Switch and Switch 2. The code that will be
+// executed can be found in `__InputSwitchXKnownGood()`. This configuration sets up Switch in a
+// stable working condition that allows for compatibility across multiple input methods. You are,
+// of course, welcome to adjust and amend these value after boot or to simply turn this macro off.
 // 
 // N.B. At this time, Input does not support "mouse mode" Joy-cons. Please get in touch if you
 //      need mouse mode support.
