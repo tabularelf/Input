@@ -71,13 +71,15 @@ function __InputRegisterCollectPlayer()
                     //Precalute coefficients to apply to axis inputs
                     var _leftH = _readArray[gp_axislh - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axislh);
                     var _leftV = _readArray[gp_axislv - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axislv);
-                    var _dist = sqrt(_leftH*_leftH + _leftV*_leftV);
-                    var _leftCoeff = clamp((_dist - _minLeft) / _deltaLeft, 0.0, 1.0) / _dist;
+                    var _leftDist = sqrt(_leftH*_leftH + _leftV*_leftV);
+                    var _leftCoeff = clamp((_leftDist - _minLeft) / _deltaLeft, 0.0, 1.0) / _leftDist;
+                    _leftDist *= _leftCoeff;
                     
                     var _rightH = _readArray[gp_axisrh - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axisrh);
                     var _rightV = _readArray[gp_axisrv - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axisrv);
-                    var _dist = sqrt(_rightH*_rightH + _rightV*_rightV);
-                    var _rightCoeff = clamp((_dist - _minRight) / _deltaRight, 0.0, 1.0) / _dist;
+                    var _rightDist = sqrt(_rightH*_rightH + _rightV*_rightV);
+                    var _rightCoeff = clamp((_rightDist - _minRight) / _deltaRight, 0.0, 1.0) / _rightDist;
+                    _rightDist *= _rightCoeff;
                     
                     var _bindingArray = __gamepadBindingArray;
                     var _i = 0;
@@ -103,15 +105,37 @@ function __InputRegisterCollectPlayer()
                                         _valueClamp = clamp((_raw - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD) / (INPUT_GAMEPAD_TRIGGER_MAX_THRESHOLD - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD), 0, 1);
                                         _valueRaw = _raw;
                                     }
-                                    else if ((_absBinding == gp_axislh) || (_absBinding == gp_axislv))
+                                    else if (_absBinding == gp_axislh)
                                     {
-                                        _valueClamp = clamp((_raw - _minLeft) / _deltaLeft, 0, 1);
-                                        _valueRaw = _raw*_leftCoeff;
+                                        if (sign(_rawBinding)*_leftH > (1 - __INPUT_THUMBSTICK_OVERLAP_FACTOR)*abs(_leftV))
+                                        {
+                                            _valueClamp = _leftDist;
+                                            _valueRaw = _raw*_leftCoeff;
+                                        }
                                     }
-                                    else if ((_absBinding == gp_axisrh) || (_absBinding == gp_axisrv))
+                                    else if (_absBinding == gp_axislv)
                                     {
-                                        _valueClamp = clamp((_raw - _minRight) / _deltaRight, 0, 1);
-                                        _valueRaw = _raw*_rightCoeff;
+                                        if (sign(_rawBinding)*_leftV > (1 - __INPUT_THUMBSTICK_OVERLAP_FACTOR)*abs(_leftH))
+                                        {
+                                            _valueClamp = _leftDist;
+                                            _valueRaw = _raw*_leftCoeff;
+                                        }
+                                    }
+                                    else if (_absBinding == gp_axisrh)
+                                    {
+                                        if (sign(_rawBinding)*_rightH > (1 - __INPUT_THUMBSTICK_OVERLAP_FACTOR)*abs(_rightV))
+                                        {
+                                            _valueClamp = _rightDist;
+                                            _valueRaw = _raw*_rightCoeff;
+                                        }
+                                    }
+                                    else if (_absBinding == gp_axisrv)
+                                    {
+                                        if (sign(_rawBinding)*_rightV > (1 - __INPUT_THUMBSTICK_OVERLAP_FACTOR)*abs(_rightH))
+                                        {
+                                            _valueClamp = _rightDist;
+                                            _valueRaw = _raw*_rightCoeff;
+                                        }
                                     }
                                     else
                                     {
