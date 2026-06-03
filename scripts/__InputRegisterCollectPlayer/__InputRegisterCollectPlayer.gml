@@ -53,6 +53,10 @@ function __InputRegisterCollectPlayer()
                     //            //
                     ////////////////
                     
+                    __lastConnectedGamepadType = InputDeviceGetGamepadType(_device);
+                    var _hotswapBlocked = false;
+                    var _readArray = __InputGamepadGetReadArray(_device);
+                    
                     var _minLeft  = __thresholdMinArray[INPUT_THRESHOLD.LEFT ];
                     var _maxLeft  = __thresholdMaxArray[INPUT_THRESHOLD.LEFT ];
                     var _minRight = __thresholdMinArray[INPUT_THRESHOLD.RIGHT];
@@ -61,11 +65,19 @@ function __InputRegisterCollectPlayer()
                     //Prevent div-by-zero
                     _maxLeft  = max(_minLeft  + math_get_epsilon(), _maxLeft);
                     _maxRight = max(_minRight + math_get_epsilon(), _maxRight);
+                    var _deltaLeft  = _maxLeft - _minLeft;
+                    var _deltaRight = _maxRight - _minRight;
                     
-                    __lastConnectedGamepadType = InputDeviceGetGamepadType(_device);
-                    var _hotswapBlocked = false;
+                    //Precalute coefficients to apply to axis inputs
+                    var _leftH = _readArray[gp_axislh - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axislh);
+                    var _leftV = _readArray[gp_axislv - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axislv);
+                    var _dist = sqrt(_leftH*_leftH + _leftV*_leftV);
+                    var _leftCoeff = clamp((_dist - _minLeft) / _deltaLeft, 0.0, 1.0) / _dist;
                     
-                    var _readArray = __InputGamepadGetReadArray(_device);
+                    var _rightH = _readArray[gp_axisrh - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axisrh);
+                    var _rightV = _readArray[gp_axisrv - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axisrv);
+                    var _dist = sqrt(_rightH*_rightH + _rightV*_rightV);
+                    var _rightCoeff = clamp((_dist - _minRight) / _deltaRight, 0.0, 1.0) / _dist;
                     
                     var _bindingArray = __gamepadBindingArray;
                     var _i = 0;
@@ -86,23 +98,25 @@ function __InputRegisterCollectPlayer()
                                 var _raw = max(0, sign(_rawBinding)*_readArray[_absBinding - INPUT_GAMEPAD_BINDING_MIN](_device, _absBinding));
                                 if (_raw > _valueRaw)
                                 {
-                                    _valueRaw = _raw;
-                                    
                                     if ((_absBinding == gp_shoulderlb) || (_absBinding == gp_shoulderrb))
                                     {
                                         _valueClamp = clamp((_raw - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD) / (INPUT_GAMEPAD_TRIGGER_MAX_THRESHOLD - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD), 0, 1);
+                                        _valueRaw = _raw;
                                     }
                                     else if ((_absBinding == gp_axislh) || (_absBinding == gp_axislv))
                                     {
-                                        _valueClamp = clamp((_raw - _minLeft) / (_maxLeft - _minLeft), 0, 1);
+                                        _valueClamp = clamp((_raw - _minLeft) / _deltaLeft, 0, 1);
+                                        _valueRaw = _raw*_leftCoeff;
                                     }
                                     else if ((_absBinding == gp_axisrh) || (_absBinding == gp_axisrv))
                                     {
-                                        _valueClamp = clamp((_raw - _minRight) / (_maxRight - _minRight), 0, 1);
+                                        _valueClamp = clamp((_raw - _minRight) / _deltaRight, 0, 1);
+                                        _valueRaw = _raw*_rightCoeff;
                                     }
                                     else
                                     {
                                         _valueClamp = (_raw > 0);
+                                        _valueRaw = _raw;
                                         _hotswapBlocked = true; //Block hotswap on a button
                                     }
                                 }
