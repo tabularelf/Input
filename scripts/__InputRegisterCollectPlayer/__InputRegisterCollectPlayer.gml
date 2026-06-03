@@ -71,13 +71,21 @@ function __InputRegisterCollectPlayer()
                     //Precalute coefficients to apply to axis inputs
                     var _leftH = _readArray[gp_axislh - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axislh);
                     var _leftV = _readArray[gp_axislv - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axislv);
-                    var _dist = sqrt(_leftH*_leftH + _leftV*_leftV);
-                    var _leftCoeff = clamp((_dist - _minLeft) / _deltaLeft, 0.0, 1.0) / _dist;
+                    var _leftDist = sqrt(_leftH*_leftH + _leftV*_leftV);
+                    var _leftCoeff = clamp((_leftDist - _minLeft) / _deltaLeft, 0.0, 1.0) / _leftDist;
+                    
+                    _leftH    *= _leftCoeff;
+                    _leftV    *= _leftCoeff;
+                    _leftDist *= _leftCoeff;
                     
                     var _rightH = _readArray[gp_axisrh - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axisrh);
                     var _rightV = _readArray[gp_axisrv - INPUT_GAMEPAD_BINDING_MIN](_device, gp_axisrv);
-                    var _dist = sqrt(_rightH*_rightH + _rightV*_rightV);
-                    var _rightCoeff = clamp((_dist - _minRight) / _deltaRight, 0.0, 1.0) / _dist;
+                    var _rightDist = sqrt(_rightH*_rightH + _rightV*_rightV);
+                    var _rightCoeff = clamp((_rightDist - _minRight) / _deltaRight, 0.0, 1.0) / _rightDist;
+                    
+                    _rightH    *= _rightCoeff;
+                    _rightV    *= _rightCoeff;
+                    _rightDist *= _rightCoeff;
                     
                     var _bindingArray = __gamepadBindingArray;
                     var _i = 0;
@@ -94,30 +102,61 @@ function __InputRegisterCollectPlayer()
                             var _rawBinding = _alternateArray[_j];
                             if (_rawBinding != undefined)
                             {
+                                var _sign = sign(_rawBinding);
                                 var _absBinding = abs(_rawBinding);
-                                var _raw = max(0, sign(_rawBinding)*_readArray[_absBinding - INPUT_GAMEPAD_BINDING_MIN](_device, _absBinding));
-                                if (_raw > _valueRaw)
+                                
+                                //Avoid fetching thumbstick state again and instead use cached values
+                                if (_absBinding == gp_axislh)
                                 {
-                                    if ((_absBinding == gp_shoulderlb) || (_absBinding == gp_shoulderrb))
+                                    if (_leftDist > _valueRaw)
                                     {
-                                        _valueClamp = clamp((_raw - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD) / (INPUT_GAMEPAD_TRIGGER_MAX_THRESHOLD - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD), 0, 1);
-                                        _valueRaw = _raw;
+                                        _valueClamp = (_sign*_leftH > __INPUT_THUMBSTICK_OVERLAP_FACTOR*abs(_leftV))? _leftDist : 0;
+                                        _valueRaw = max(0, _sign*_leftH);
                                     }
-                                    else if ((_absBinding == gp_axislh) || (_absBinding == gp_axislv))
+                                }
+                                else if (_absBinding == gp_axislv)
+                                {
+                                    if (_leftDist > _valueRaw)
                                     {
-                                        _valueClamp = clamp((_raw - _minLeft) / _deltaLeft, 0, 1);
-                                        _valueRaw = _raw*_leftCoeff;
+                                        _valueClamp = (_sign*_leftV > __INPUT_THUMBSTICK_OVERLAP_FACTOR*abs(_leftH))? _leftDist : 0;
+                                        _valueRaw = max(0, _sign*_leftV);
                                     }
-                                    else if ((_absBinding == gp_axisrh) || (_absBinding == gp_axisrv))
+                                }
+                                else if (_absBinding == gp_axisrh)
+                                {
+                                    if (_rightDist > _valueRaw)
                                     {
-                                        _valueClamp = clamp((_raw - _minRight) / _deltaRight, 0, 1);
-                                        _valueRaw = _raw*_rightCoeff;
+                                        _valueClamp = (_sign*_rightH > __INPUT_THUMBSTICK_OVERLAP_FACTOR*abs(_rightV))? _rightDist : 0;
+                                        _valueRaw = max(0, _sign*_rightH);
                                     }
-                                    else
+                                }
+                                else if (_absBinding == gp_axisrv)
+                                {
+                                    if (_rightDist > _valueRaw)
                                     {
-                                        _valueClamp = (_raw > 0);
-                                        _valueRaw = _raw;
-                                        _hotswapBlocked = true; //Block hotswap on a button
+                                        _valueClamp = (_sign*_rightV > __INPUT_THUMBSTICK_OVERLAP_FACTOR*abs(_rightH))? _rightDist : 0;
+                                        _valueRaw = max(0, _sign*_rightV);
+                                    }
+                                }
+                                else
+                                {
+                                    //Other input types need to get state from the gamepad
+                                    
+                                    var _raw = _sign*_readArray[_absBinding - INPUT_GAMEPAD_BINDING_MIN](_device, _absBinding);
+                                    if (_raw > _valueRaw)
+                                    {
+                                        if ((_absBinding == gp_shoulderlb) || (_absBinding == gp_shoulderrb))
+                                        {
+                                            _valueClamp = clamp((_raw - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD) / (INPUT_GAMEPAD_TRIGGER_MAX_THRESHOLD - INPUT_GAMEPAD_TRIGGER_MIN_THRESHOLD), 0, 1);
+                                            _valueRaw = _raw;
+                                        }
+                                        else
+                                        {
+                                            _valueClamp = (_raw > 0);
+                                            _valueRaw = _raw;
+                                            
+                                            _hotswapBlocked = true; //Block hotswap on a button
+                                        }
                                     }
                                 }
                             }
