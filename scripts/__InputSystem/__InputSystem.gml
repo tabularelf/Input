@@ -220,6 +220,12 @@ function __InputSystem()
             ps5_touchpad_mouse_enable(false);
         }
         
+        //Set known-good configuration on Switch
+        if (INPUT_ON_SWITCH_X && INPUT_SWITCH_X_KNOWN_GOOD)
+        {
+            __InputSwitchXKnownGood();
+        }
+        
         
         
         //Create a time source if the library needs to self-manage
