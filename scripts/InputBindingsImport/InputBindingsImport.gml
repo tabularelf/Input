@@ -34,9 +34,10 @@ function InputBindingsImport(_forGamepad, _data, _playerIndex = 0)
             var _j = 0;
             repeat(array_length(_alternates))
             {
-                var _binding = abs(_alternates[_j]);
+                var _binding = _alternates[_j];
                 if (_binding != undefined)
                 {
+                    _binding = abs(_binding);
                     var _isGamepadBinding = (_binding >= INPUT_GAMEPAD_BINDING_MIN) && (_binding <= INPUT_GAMEPAD_BINDING_MAX);
                     if (_forGamepad != _isGamepadBinding)
                     {
