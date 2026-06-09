@@ -50,7 +50,7 @@ GAMEPAD_TYPE_MAPPING = {
 
 # fetch gamecontrollerdb.txt
 script_dir = os.path.dirname(os.path.realpath(__file__))
-datafiles_dir = os.path.join(script_dir, "datafiles")
+datafiles_dir = os.path.join(script_dir, "../datafiles")
 os.makedirs(datafiles_dir, exist_ok=True)
 
 gamecontrollerdb_path = os.path.join(datafiles_dir, "gamecontrollerdb.txt")
@@ -76,7 +76,7 @@ for file in DATA_SOURCES:
     filename = data_index.get("destination")
     sources = list(data_index.get("sources"))
 
-    working_path = os.path.join(script_dir, "scripts/__InputCreateTypeLookup", filename)
+    working_path = os.path.join(script_dir, "../scripts/__InputCreateTypeLookup", filename)
     if os.path.exists(working_path):
         os.remove(working_path)
     working_handle = open(working_path, "w")
