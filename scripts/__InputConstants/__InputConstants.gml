@@ -11,8 +11,8 @@
 //                                                                        //
 ////////////////////////////////////////////////////////////////////////////
 
-#macro INPUT_VERSION  "10.3.2"
-#macro INPUT_DATE     "2026-04-23"
+#macro INPUT_VERSION  "10.4.0"
+#macro INPUT_DATE     "2026-06-09"
 
 #macro INPUT_NO_DEVICE       -1
 #macro INPUT_KBM             -100
@@ -104,19 +104,21 @@ enum INPUT_PLUG_IN_CALLBACK
 
 #macro INPUT_RUNNING_FROM_IDE  (GM_build_type == "run")
 
-#macro INPUT_ON_WINDOWS  (os_type == os_windows)
-#macro INPUT_ON_MACOS    (os_type == os_macosx)
-#macro INPUT_ON_LINUX    (os_type == os_linux)
-#macro INPUT_ON_IOS      (os_type == os_ios || os_type == os_tvos)
-#macro INPUT_ON_ANDROID  (os_type == os_android)
-#macro INPUT_ON_XBOX     ((os_type == os_xboxone) || (os_type == os_xboxseriesxs))
-#macro INPUT_ON_PS4      (os_type == os_ps4)
-#macro INPUT_ON_PS5      (os_type == os_ps5)
-#macro INPUT_ON_SWITCH   (os_type == os_switch)
-#macro INPUT_ON_CONSOLE  (INPUT_ON_XBOX || INPUT_ON_PS4 || INPUT_ON_PS5 || INPUT_ON_SWITCH)
-#macro INPUT_ON_APPLE    (INPUT_ON_MACOS || INPUT_ON_IOS)
-#macro INPUT_ON_OPERAGX  (os_type == os_operagx)
-#macro INPUT_ON_WEB      ((os_browser != browser_not_a_browser) || INPUT_ON_OPERAGX)
+#macro INPUT_ON_WINDOWS   (os_type == os_windows)
+#macro INPUT_ON_MACOS     (os_type == os_macosx)
+#macro INPUT_ON_LINUX     (os_type == os_linux)
+#macro INPUT_ON_IOS       (os_type == os_ios || os_type == os_tvos)
+#macro INPUT_ON_ANDROID   (os_type == os_android)
+#macro INPUT_ON_XBOX      ((os_type == os_xboxone) || (os_type == os_xboxseriesxs))
+#macro INPUT_ON_PS4       (os_type == os_ps4)
+#macro INPUT_ON_PS5       (os_type == os_ps5)
+#macro INPUT_ON_SWITCH    (os_type == os_switch)
+#macro INPUT_ON_SWITCH_2  (os_type == os_switch2)
+#macro INPUT_ON_SWITCH_X  (INPUT_ON_SWITCH || INPUT_ON_SWITCH_2)
+#macro INPUT_ON_CONSOLE   (INPUT_ON_XBOX || INPUT_ON_PS4 || INPUT_ON_PS5 || INPUT_ON_SWITCH_X)
+#macro INPUT_ON_APPLE     (INPUT_ON_MACOS || INPUT_ON_IOS)
+#macro INPUT_ON_OPERAGX   (os_type == os_operagx)
+#macro INPUT_ON_WEB       ((os_browser != browser_not_a_browser) || INPUT_ON_OPERAGX)
 
 //Runtime on web, constant on native as of 2024.2
 //Tested and confirmed in VM bytecode disassembly

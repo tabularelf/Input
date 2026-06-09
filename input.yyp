@@ -347,6 +347,7 @@
     {"id":{"name":"InputRepeat","path":"scripts/InputRepeat/InputRepeat.yy",},},
     {"id":{"name":"InputSetHotswap","path":"scripts/InputSetHotswap/InputSetHotswap.yy",},},
     {"id":{"name":"InputSetHotswapCallback","path":"scripts/InputSetHotswapCallback/InputSetHotswapCallback.yy",},},
+    {"id":{"name":"__InputSwitchXKnownGood","path":"scripts/__InputSwitchXKnownGood/__InputSwitchXKnownGood.yy",},},
     {"id":{"name":"InputTriggerEffectFeedback","path":"scripts/InputTriggerEffectFeedback/InputTriggerEffectFeedback.yy",},},
     {"id":{"name":"InputTriggerEffectGetPause","path":"scripts/InputTriggerEffectGetPause/InputTriggerEffectGetPause.yy",},},
     {"id":{"name":"InputTriggerEffectGetState","path":"scripts/InputTriggerEffectGetState/InputTriggerEffectGetState.yy",},},
