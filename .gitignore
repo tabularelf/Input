@@ -1,6 +1,5 @@
 build
 extensions/Steamworks
-options/extensions/Steamworks.json
 
 # GameMaker things
 
@@ -63,5 +62,4 @@ Temporary Items
 # GameMaker temporary files
 *.resource_order
 *.old
-/options/switch2
-/options/switch
+/options
