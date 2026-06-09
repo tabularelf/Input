@@ -1,0 +1,280 @@
+Input Config,Input String,Asset Name,Vector,Vector Alternate
+INPUT_GAMEPAD_TYPE_UNKNOWN,face south,SpriteGamepadFaceSouth,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_down_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,face east,SpriteGamepadFaceEast,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_right_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,face west,SpriteGamepadFaceWest,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_left_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,face north,SpriteGamepadFaceNorth,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_up_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,shoulder l,SpriteGamepadShoulderL,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l1_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l1_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,shoulder r,SpriteGamepadShoulderR,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r1_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r1_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,trigger l,SpriteGamepadTriggerL,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l2_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l2_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,trigger r,SpriteGamepadTriggerR,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r2_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r2_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,select,SpriteGamepadSelect,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_back_icon.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_back_icon_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,start,SpriteGamepadStart,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_start_icon.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_start_icon_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,home,SpriteGamepadHome,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_home.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_home_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad left,SpriteGamepadDpadLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_left_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad right,SpriteGamepadDpadRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_right_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad up,SpriteGamepadDpadUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_up_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad down,SpriteGamepadDpadDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_down_outline.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l left,SpriteGamepadThumbstickLLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_left.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l right,SpriteGamepadThumbstickLRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_right.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l up,SpriteGamepadThumbstickLUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_up.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l down,SpriteGamepadThumbstickLDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_down.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l click,SpriteGamepadThumbstickLClick,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_side_l.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_press.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r left,SpriteGamepadThumbstickRLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_left.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r right,SpriteGamepadThumbstickRRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_right.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r up,SpriteGamepadThumbstickRUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_up.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r down,SpriteGamepadThumbstickRDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_down.svg,
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r click,SpriteGamepadThumbstickRClick,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_side_r.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_press.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,paddle r,SpriteGamepadPaddleR,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_r4.svg,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_r4_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,paddle l,SpriteGamepadPaddleL,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_l4.svg,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_l4_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,paddle rb,SpriteGamepadPaddleRB,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_r5.svg,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_r5_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,paddle lb,SpriteGamepadPaddleLB,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_l5.svg,kenney_input-prompts_1.5.zip/Steam Controller/Vector/controller_button_l5_outline.svg
+INPUT_GAMEPAD_TYPE_UNKNOWN,touchpad,SpriteGamepadTouchpad,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_touchpad_press.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_touchpad_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,A,SpriteGamepadA,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_a.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_a_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,B,SpriteGamepadB,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_b.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_b_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,X,SpriteGamepadX,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_x.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_x_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,Y,SpriteGamepadY,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_y.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_y_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,LB,SpriteGamepadLB,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_lb.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_lb_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,RB,SpriteGamepadRB,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_rb.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_rb_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,LT,SpriteGamepadLT,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_lt.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_lt_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,RT,SpriteGamepadRT,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_rt.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_rt_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,view,SpriteGamepadView,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_view.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_view_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,menu,SpriteGamepadMenu,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_menu.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_menu_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,dpad left,SpriteGamepadDpadLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_left_outline.svg,
+INPUT_GAMEPAD_TYPE_XBOX,dpad right,SpriteGamepadDpadRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_right_outline.svg,
+INPUT_GAMEPAD_TYPE_XBOX,dpad up,SpriteGamepadDpadUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_up_outline.svg,
+INPUT_GAMEPAD_TYPE_XBOX,dpad down,SpriteGamepadDpadDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_dpad_down_outline.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l left,SpriteGamepadThumbstickLLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_left.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l right,SpriteGamepadThumbstickLRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_right.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l up,SpriteGamepadThumbstickLUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_up.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l down,SpriteGamepadThumbstickLDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_down.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l click,SpriteGamepadThumbstickLClick,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_side_l.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_press.svg
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r left,SpriteGamepadThumbstickRLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_left.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r right,SpriteGamepadThumbstickRRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_right.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r up,SpriteGamepadThumbstickRUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_up.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r down,SpriteGamepadThumbstickRDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_down.svg,
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r click,SpriteGamepadThumbstickRClick,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_side_r.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_press.svg
+INPUT_GAMEPAD_TYPE_XBOX,share,SpriteGamepadShare,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_share.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_share_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,P1,SpriteGamepadP1,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_top_right.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_top_right_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,P2,SpriteGamepadP2,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_bottom_right.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_bottom_right_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,P3,SpriteGamepadP3,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_top_left.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_top_left_outline.svg
+INPUT_GAMEPAD_TYPE_XBOX,P4,SpriteGamepadP4,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_bottom_left.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_elite_paddle_bottom_left_outline.svg
+InputIconDefineKeyboard,mouse left,SpriteMouseLeft,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/mouse_left_outline.svg,
+InputIconDefineKeyboard,mouse middle,SpriteMouseMiddle,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/mouse_scroll_outline.svg,
+InputIconDefineKeyboard,mouse right,SpriteMouseRight,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/mouse_right_outline.svg,
+InputIconDefineKeyboard,mouse 4,SpriteMouse4,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/mouse_side_back_outline.svg,
+InputIconDefineKeyboard,mouse 5,SpriteMouse5,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/mouse_side_forward_outline.svg,
+InputIconDefineKeyboard,mouse wheel down,SpriteMouseWheelDown,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/mouse_scroll_up_outline.svg,
+InputIconDefineKeyboard,mouse wheel up,SpriteMouseWheelUp,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/mouse_scroll_down_outline.svg,
+InputIconDefineKeyboard,A,SpriteKeyboardA,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_a.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_a_outline.svg
+InputIconDefineKeyboard,B,SpriteKeyboardB,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_b.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_b_outline.svg
+InputIconDefineKeyboard,C,SpriteKeyboardC,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_c.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_c_outline.svg
+InputIconDefineKeyboard,D,SpriteKeyboardD,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_d.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_d_outline.svg
+InputIconDefineKeyboard,E,SpriteKeyboardE,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_e.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_e_outline.svg
+InputIconDefineKeyboard,F,SpriteKeyboardF,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f_outline.svg
+InputIconDefineKeyboard,G,SpriteKeyboardG,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_g.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_g_outline.svg
+InputIconDefineKeyboard,H,SpriteKeyboardH,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_h.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_h_outline.svg
+InputIconDefineKeyboard,I,SpriteKeyboardI,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_i.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_i_outline.svg
+InputIconDefineKeyboard,J,SpriteKeyboardJ,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_j.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_j_outline.svg
+InputIconDefineKeyboard,K,SpriteKeyboardK,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_k.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_k_outline.svg
+InputIconDefineKeyboard,L,SpriteKeyboardL,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_l.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_l_outline.svg
+InputIconDefineKeyboard,M,SpriteKeyboardM,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_m.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_m_outline.svg
+InputIconDefineKeyboard,N,SpriteKeyboardN,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_n.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_n_outline.svg
+InputIconDefineKeyboard,O,SpriteKeyboardO,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_o.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_o_outline.svg
+InputIconDefineKeyboard,P,SpriteKeyboardP,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_p.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_p_outline.svg
+InputIconDefineKeyboard,Q,SpriteKeyboardQ,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_q.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_q_outline.svg
+InputIconDefineKeyboard,R,SpriteKeyboardR,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_r.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_r_outline.svg
+InputIconDefineKeyboard,S,SpriteKeyboardS,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_s.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_s_outline.svg
+InputIconDefineKeyboard,T,SpriteKeyboardT,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_t.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_t_outline.svg
+InputIconDefineKeyboard,U,SpriteKeyboardU,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_u.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_u_outline.svg
+InputIconDefineKeyboard,V,SpriteKeyboardV,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_v.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_v_outline.svg
+InputIconDefineKeyboard,W,SpriteKeyboardW,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_w.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_w_outline.svg
+InputIconDefineKeyboard,X,SpriteKeyboardX,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_x.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_x_outline.svg
+InputIconDefineKeyboard,Y,SpriteKeyboardY,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_y.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_y_outline.svg
+InputIconDefineKeyboard,Z,SpriteKeyboardZ,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_z.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_z_outline.svg
+InputIconDefineKeyboard,0,SpriteKeyboard0,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_0.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_0_outline.svg
+InputIconDefineKeyboard,1,SpriteKeyboard1,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_1.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_1_outline.svg
+InputIconDefineKeyboard,2,SpriteKeyboard2,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_2.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_2_outline.svg
+InputIconDefineKeyboard,3,SpriteKeyboard3,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_3.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_3_outline.svg
+InputIconDefineKeyboard,4,SpriteKeyboard4,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_4.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_4_outline.svg
+InputIconDefineKeyboard,5,SpriteKeyboard5,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_5.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_5_outline.svg
+InputIconDefineKeyboard,6,SpriteKeyboard6,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_6.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_6_outline.svg
+InputIconDefineKeyboard,7,SpriteKeyboard7,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_7.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_7_outline.svg
+InputIconDefineKeyboard,8,SpriteKeyboard8,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_8.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_8_outline.svg
+InputIconDefineKeyboard,9,SpriteKeyboard9,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_9.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_9_outline.svg
+InputIconDefineKeyboard,-,SpriteKeyboardMinus,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_minus.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_minus_outline.svg
+InputIconDefineKeyboard,=,SpriteKeyboardEquals,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_equals.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_equals_outline.svg
+InputIconDefineKeyboard,;,SpriteKeyboardSemicolon,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_semicolon.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_semicolon_outline.svg
+InputIconDefineKeyboard,',SpriteKeyboardApostrophe,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_apostrophe.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_apostrophe_outline.svg
+InputIconDefineKeyboard,",",SpriteKeyboardComma,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_comma.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_comma_outline.svg
+InputIconDefineKeyboard,.,SpriteKeyboardPeriod,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_period.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_period_outline.svg
+InputIconDefineKeyboard,],SpriteKeyboardSquareBracketClose,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_bracket_close.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_bracket_close_outline.svg
+InputIconDefineKeyboard,[,SpriteKeyboardSquareBracketOpen,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_bracket_open.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_bracket_open_outline.svg
+InputIconDefineKeyboard,/,SpriteKeyboardSlashForward,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_slash_forward.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_slash_forward_outline.svg
+InputIconDefineKeyboard,\,SpriteKeyboardSlashBack,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_slash_back.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_slash_back_outline.svg
+InputIconDefineKeyboard,scroll lock,SpriteKeyboardScrollLock,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_scroll_lock.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_scroll_lock_outline.svg
+InputIconDefineKeyboard,caps lock,SpriteKeyboardCapsLock,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_capslock.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_capslock_outline.svg
+InputIconDefineKeyboard,num lock,SpriteKeyboardNumLock,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_numlock.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_numlock_outline.svg
+InputIconDefineKeyboard,left meta,SpriteKeyboardLeftMeta,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_win.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_win_outline.svg
+InputIconDefineKeyboard,right meta,SpriteKeyboardRightMeta,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_win.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_win_outline.svg
+InputIconDefineKeyboard,print screen,SpriteKeyboardPrintScreen,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_printscreen.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_printscreen_outline.svg
+InputIconDefineKeyboard,pause break,SpriteKeyboardPauseBreak,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_pause_break.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_pause_break_outline.svg
+InputIconDefineKeyboard,escape,SpriteKeyboardEscape,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_escape.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_escape_outline.svg
+InputIconDefineKeyboard,backspace,SpriteKeyboardBackspace,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_backspace_icon.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_backspace_icon_outline.svg
+InputIconDefineKeyboard,space,SpriteKeyboardSpace,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_space_icon.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_space_icon_outline.svg
+InputIconDefineKeyboard,enter,SpriteKeyboardEnter,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_enter.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_enter_outline.svg
+InputIconDefineKeyboard,arrow up,SpriteKeyboardArrowUp,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_up.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_up_outline.svg
+InputIconDefineKeyboard,arrow down,SpriteKeyboardArrowDown,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_down.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_down_outline.svg
+InputIconDefineKeyboard,arrow left,SpriteKeyboardArrowLeft,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_left.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_left_outline.svg
+InputIconDefineKeyboard,arrow right,SpriteKeyboardArrowRight,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_right.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_arrow_right_outline.svg
+InputIconDefineKeyboard,tab,SpriteKeyboardTab,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_tab_icon.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_tab_icon_outline.svg
+InputIconDefineKeyboard,right alt,SpriteKeyboardRightAlt,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_alt.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_alt_outline.svg
+InputIconDefineKeyboard,left alt,SpriteKeyboardLeftAlt,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_alt.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_alt_outline.svg
+InputIconDefineKeyboard,alt,SpriteKeyboardAlt,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_alt.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_alt_outline.svg
+InputIconDefineKeyboard,right shift,SpriteKeyboardRightShift,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_shift_icon.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_shift_icon_outline.svg
+InputIconDefineKeyboard,left shift,SpriteKeyboardLeftShift,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_shift_icon.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_shift_icon_outline.svg
+InputIconDefineKeyboard,shift,SpriteKeyboardShift,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_shift_icon.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_shift_icon_outline.svg
+InputIconDefineKeyboard,right ctrl,SpriteKeyboardRightCtrl,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_ctrl.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_ctrl_outline.svg
+InputIconDefineKeyboard,left ctrl,SpriteKeyboardLeftCtrl,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_ctrl.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_ctrl_outline.svg
+InputIconDefineKeyboard,ctrl,SpriteKeyboardCtrl,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_ctrl.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_ctrl_outline.svg
+InputIconDefineKeyboard,f1,SpriteKeyboardF1,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f1.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f1_outline.svg
+InputIconDefineKeyboard,f2,SpriteKeyboardF2,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f2.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f2_outline.svg
+InputIconDefineKeyboard,f3,SpriteKeyboardF3,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f3.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f3_outline.svg
+InputIconDefineKeyboard,f4,SpriteKeyboardF4,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f4.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f4_outline.svg
+InputIconDefineKeyboard,f5,SpriteKeyboardF5,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f5.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f5_outline.svg
+InputIconDefineKeyboard,f6,SpriteKeyboardF6,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f6.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f6_outline.svg
+InputIconDefineKeyboard,f7,SpriteKeyboardF7,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f7.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f7_outline.svg
+InputIconDefineKeyboard,f8,SpriteKeyboardF8,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f8.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f8_outline.svg
+InputIconDefineKeyboard,f9,SpriteKeyboardF9,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f9.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f9_outline.svg
+InputIconDefineKeyboard,f10,SpriteKeyboardF10,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f10.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f10_outline.svg
+InputIconDefineKeyboard,f11,SpriteKeyboardF11,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f11.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f11_outline.svg
+InputIconDefineKeyboard,f12,SpriteKeyboardF12,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f12.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_f12_outline.svg
+InputIconDefineKeyboard,numpad /,SpriteKeyboardNumpadSlashForward,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_slash_forward.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_slash_forward_outline.svg
+InputIconDefineKeyboard,numpad *,SpriteKeyboardNumpadAsterisk,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_asterisk.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_asterisk_outline.svg
+InputIconDefineKeyboard,numpad -,SpriteKeyboardNumpadMinus,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_minus.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_minus_outline.svg
+InputIconDefineKeyboard,numpad +,SpriteKeyboardNumpadPlus,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_plus.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_plus_outline.svg
+InputIconDefineKeyboard,numpad .,SpriteKeyboardNumpadPeriod,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_period.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_period_outline.svg
+InputIconDefineKeyboard,numpad 0,SpriteKeyboardNumpad0,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_0.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_0_outline.svg
+InputIconDefineKeyboard,numpad 1,SpriteKeyboardNumpad1,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_1.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_1_outline.svg
+InputIconDefineKeyboard,numpad 2,SpriteKeyboardNumpad2,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_2.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_2_outline.svg
+InputIconDefineKeyboard,numpad 3,SpriteKeyboardNumpad3,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_3.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_3_outline.svg
+InputIconDefineKeyboard,numpad 4,SpriteKeyboardNumpad4,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_4.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_4_outline.svg
+InputIconDefineKeyboard,numpad 5,SpriteKeyboardNumpad5,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_5.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_5_outline.svg
+InputIconDefineKeyboard,numpad 6,SpriteKeyboardNumpad6,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_6.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_6_outline.svg
+InputIconDefineKeyboard,numpad 7,SpriteKeyboardNumpad7,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_7.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_7_outline.svg
+InputIconDefineKeyboard,numpad 8,SpriteKeyboardNumpad8,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_8.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_8_outline.svg
+InputIconDefineKeyboard,numpad 9,SpriteKeyboardNumpad9,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_9.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_9_outline.svg
+InputIconDefineKeyboard,delete,SpriteKeyboardDelete,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_delete.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_delete_outline.svg
+InputIconDefineKeyboard,insert,SpriteKeyboardInsert,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_insert.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_insert_outline.svg
+InputIconDefineKeyboard,home,SpriteKeyboardHome,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_home.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_home_outline.svg
+InputIconDefineKeyboard,page up,SpriteKeyboardPageUp,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_page_up.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_page_up_outline.svg
+InputIconDefineKeyboard,page down,SpriteKeyboardPageDown,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_page_down.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_page_down_outline.svg
+InputIconDefineKeyboard,end,SpriteKeyboardEnd,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_end.svg,kenney_input-prompts_1.5.zip/Keyboard & Mouse/Vector/keyboard_end_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,B,SpriteGamepadB,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_b.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_b_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,A,SpriteGamepadA,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_a.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_a_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,Y,SpriteGamepadY,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_y.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_y_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,X,SpriteGamepadX,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_x.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_button_x_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,L,SpriteGamepadL,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_l.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_l_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,R,SpriteGamepadR,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_r.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_r_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,ZL,SpriteGamepadZL,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_zl.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_zl_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,ZR,SpriteGamepadZR,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_zr.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_zr_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,minus,SpriteGamepadMinus,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_minus.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_minus_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,plus,SpriteGamepadPlus,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_plus.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_plus_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,dpad left,SpriteGamepadDpadLeftSwitch,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_left.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_left_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,dpad right,SpriteGamepadDpadRightSwitch,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_right.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_right_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,dpad up,SpriteGamepadDpadUpSwitch,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_up.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_up_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,dpad down,SpriteGamepadDpadDownSwitch,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_down.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_down_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l left,SpriteGamepadThumbstickLLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_left.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l right,SpriteGamepadThumbstickLRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_right.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l up,SpriteGamepadThumbstickLUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_up.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l down,SpriteGamepadThumbstickLDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_down.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l click,SpriteGamepadThumbstickLClick,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_side_l.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_press.svg
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r left,SpriteGamepadThumbstickRLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_left.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r right,SpriteGamepadThumbstickRRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_right.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r up,SpriteGamepadThumbstickRUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_up.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r down,SpriteGamepadThumbstickRDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_down.svg,
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r click,SpriteGamepadThumbstickRClick,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_side_r.svg,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_press.svg
+INPUT_GAMEPAD_TYPE_SWITCH,home,SpriteGamepadHome,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_home.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_home_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,capture,SpriteGamepadCapture,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sync.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sync_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,C,SpriteGamepadC,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_c.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_c_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,GL,SpriteGamepadGL,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_gl.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_gl_outline.svg
+INPUT_GAMEPAD_TYPE_SWITCH,GR,SpriteGamepadGR,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_gr.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_gr_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face south,SpriteGamepadFaceSouth,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_down_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face east,SpriteGamepadFaceEast,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_right_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face west,SpriteGamepadFaceWest,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_left_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face north,SpriteGamepadFaceNorth,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_up_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,SL,SpriteGamepadSL,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sl.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sl_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,SR,SpriteGamepadSR,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sr.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sr_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,minus,SpriteGamepadMinus,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_minus.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_minus_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick left,SpriteGamepadThumbstickLeft,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_left.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick right,SpriteGamepadThumbstickRight,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_right.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick up,SpriteGamepadThumbstickUp,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_up.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick down,SpriteGamepadThumbstickDown,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_down.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick click,SpriteGamepadThumbstickClick,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_side_l.svg,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_l_press.svg
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,capture,SpriteGamepadCapture,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sync.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sync_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face south,SpriteGamepadFaceSouth,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_down_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face east,SpriteGamepadFaceEast,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_right_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face west,SpriteGamepadFaceWest,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_left_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face north,SpriteGamepadFaceNorth,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_buttons_up_outline.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,SL,SpriteGamepadSL,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sl.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sl_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,SR,SpriteGamepadSR,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sr.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_sr_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,plus,SpriteGamepadPlus,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_plus.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_plus_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick left,SpriteGamepadThumbstickLeft,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_left.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick right,SpriteGamepadThumbstickRight,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_right.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick up,SpriteGamepadThumbstickUp,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_up.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick down,SpriteGamepadThumbstickDown,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_down.svg,
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick click,SpriteGamepadThumbstickClick,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_side_l.svg,kenney_input-prompts_1.5.zip/Steam Controller/Vector/steam_stick_l_press.svg
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,home,SpriteGamepadHome,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_home.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_home_outline.svg
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,C,SpriteGamepadC,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_c.svg,kenney_input-prompts_1.5.zip/Nintendo Switch 2/Vector/switch_button_c_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,cross,SpriteGamepadCross,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_cross.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_cross_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,circle,SpriteGamepadCircle,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_circle.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_circle_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,square,SpriteGamepadSquare,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_square.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_square_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,triangle,SpriteGamepadTriangle,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_triangle.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_triangle_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,L1,SpriteGamepadL1,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l1_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l1_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,R1,SpriteGamepadR1,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r1_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r1_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,L2,SpriteGamepadL2,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l2_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l2_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,R2,SpriteGamepadR2,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r2_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r2_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,share,SpriteGamepadSharePS4,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation4_button_share.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation4_button_share_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,options,SpriteGamepadOptionsPS4,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation4_button_options.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation4_button_options_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,dpad left,SpriteGamepadDpadLeftPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_left_outline.svg,
+INPUT_GAMEPAD_TYPE_PS4,dpad right,SpriteGamepadDpadRightPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_right_outline.svg,
+INPUT_GAMEPAD_TYPE_PS4,dpad up,SpriteGamepadDpadUpPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_up_outline.svg,
+INPUT_GAMEPAD_TYPE_PS4,dpad down,SpriteGamepadDpadDownPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_down_outline.svg,
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l left,SpriteGamepadThumbstickLLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_left.svg,
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l right,SpriteGamepadThumbstickLRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_right.svg,
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l up,SpriteGamepadThumbstickLUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_up.svg,
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l down,SpriteGamepadThumbstickLDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_down.svg,
+INPUT_GAMEPAD_TYPE_PS4,L3,SpriteGamepadL3,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_l3.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_l3_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r left,SpriteGamepadThumbstickRLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_left.svg,
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r right,SpriteGamepadThumbstickRRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_right.svg,
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r up,SpriteGamepadThumbstickRUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_up.svg,
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r down,SpriteGamepadThumbstickRDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_down.svg,
+INPUT_GAMEPAD_TYPE_PS4,R3,SpriteGamepadR3,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_r3.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_r3_outline.svg
+INPUT_GAMEPAD_TYPE_PS4,touchpad,SpriteGamepadTouchpadPS4,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation4_touchpad_press.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation4_touchpad_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,mic,SpriteGamepadMic,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_button_mute.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_button_mute_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,RB,SpriteGamepadRBPS5,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_elite_rb.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_elite_rb_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,LB,SpriteGamepadLBPS5,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_elite_lb.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_elite_lb_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,touchpad,SpriteGamepadTouchpad,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_touchpad_press.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_touchpad_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,create,SpriteGamepadCreate,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_button_create.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_button_create_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,options,SpriteGamepadOptionsPS5,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_button_options.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation5_button_options_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,cross,SpriteGamepadCross,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_cross.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_cross_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,circle,SpriteGamepadCircle,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_circle.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_circle_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,square,SpriteGamepadSquare,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_square.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_square_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,triangle,SpriteGamepadTriangle,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_triangle.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_triangle_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,L1,SpriteGamepadL1,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l1_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l1_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,R1,SpriteGamepadR1,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r1_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r1_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,L2,SpriteGamepadL2,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l2_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_l2_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,R2,SpriteGamepadR2,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r2_alternative.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_trigger_r2_alternative_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,dpad left,SpriteGamepadDpadLeftPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_left_outline.svg,
+INPUT_GAMEPAD_TYPE_PS5,dpad right,SpriteGamepadDpadRightPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_right_outline.svg,
+INPUT_GAMEPAD_TYPE_PS5,dpad up,SpriteGamepadDpadUpPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_up_outline.svg,
+INPUT_GAMEPAD_TYPE_PS5,dpad down,SpriteGamepadDpadDownPS,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_dpad_down_outline.svg,
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l left,SpriteGamepadThumbstickLLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_left.svg,
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l right,SpriteGamepadThumbstickLRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_right.svg,
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l up,SpriteGamepadThumbstickLUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_up.svg,
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l down,SpriteGamepadThumbstickLDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_l_down.svg,
+INPUT_GAMEPAD_TYPE_PS5,L3,SpriteGamepadL3,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_l3.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_l3_outline.svg
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r left,SpriteGamepadThumbstickRLeft,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_left.svg,
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r right,SpriteGamepadThumbstickRRight,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_right.svg,
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r up,SpriteGamepadThumbstickRUp,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_up.svg,
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r down,SpriteGamepadThumbstickRDown,kenney_input-prompts_1.5.zip/Xbox Series/Vector/xbox_stick_r_down.svg,
+INPUT_GAMEPAD_TYPE_PS5,R3,SpriteGamepadR3,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_r3.svg,kenney_input-prompts_1.5.zip/PlayStation Series/Vector/playstation_button_r3_outline.svg
