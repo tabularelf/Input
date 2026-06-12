@@ -1,0 +1,267 @@
+Input Config,Input String,Asset Name,Tile X,Tile Y,Tile Width,Tile Height,Alt X,Alt Y,Alt Width,Alt Height,Compose
+INPUT_GAMEPAD_TYPE_UNKNOWN,face south,SpriteGamepadFaceSouth,6,11,1,1,2,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,face east,SpriteGamepadFaceEast,5,11,1,1,3,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,face west,SpriteGamepadFaceWest,7,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,face north,SpriteGamepadFaceNorth,4,11,1,1,0,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,shoulder l,SpriteGamepadShoulderL,19,19,1,1,19,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,shoulder r,SpriteGamepadShoulderR,20,19,1,1,20,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,trigger l,SpriteGamepadTriggerL,21,19,1,1,21,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,trigger r,SpriteGamepadTriggerR,22,19,1,1,22,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,select,SpriteGamepadSelect,26,21,1,1,26,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,start,SpriteGamepadStart,27,21,1,1,27,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,home,SpriteGamepadHome,2,21,1,1,2,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad left,SpriteGamepadDpadLeft,4,2,1,1,4,3,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad right,SpriteGamepadDpadRight,2,2,1,1,2,1,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad up,SpriteGamepadDpadUp,1,2,1,1,1,1,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,dpad down,SpriteGamepadDpadDown,3,2,1,1,3,1,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l left,SpriteGamepadThumbstickLLeft,12,7,1,1,12,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l right,SpriteGamepadThumbstickLRight,10,7,1,1,10,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l up,SpriteGamepadThumbstickLUp,9,7,1,1,9,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l down,SpriteGamepadThumbstickLDown,11,7,1,1,11,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick l click,SpriteGamepadThumbstickLClick,16,13,1,1,16,12,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r left,SpriteGamepadThumbstickRLeft,12,9,1,1,12,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r right,SpriteGamepadThumbstickRRight,10,9,1,1,10,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r up,SpriteGamepadThumbstickRUp,9,9,1,1,9,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r down,SpriteGamepadThumbstickRDown,11,9,1,1,11,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,thumbstick r click,SpriteGamepadThumbstickRClick,16,15,1,1,16,14,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,touchpad,SpriteGamepadTouchpad,22,21,1,1,22,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,A,SpriteGamepadA,8,1,1,1,13,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,B,SpriteGamepadB,9,1,1,1,14,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,X,SpriteGamepadX,10,1,1,1,15,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,Y,SpriteGamepadY,11,1,1,1,16,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,LB,SpriteGamepadLB,9,17,1,1,9,16,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,RB,SpriteGamepadRB,10,17,1,1,10,16,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,LT,SpriteGamepadLT,13,17,1,1,13,16,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,RT,SpriteGamepadRT,14,17,1,1,14,16,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,view,SpriteGamepadView,4,19,1,1,4,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,menu,SpriteGamepadMenu,5,19,1,1,5,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,dpad left,SpriteGamepadDpadLeft,4,2,1,1,4,3,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,dpad right,SpriteGamepadDpadRight,2,2,1,1,2,1,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,dpad up,SpriteGamepadDpadUp,1,2,1,1,1,1,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,dpad down,SpriteGamepadDpadDown,3,2,1,1,3,1,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l left,SpriteGamepadThumbstickLLeft,12,7,1,1,12,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l right,SpriteGamepadThumbstickLRight,10,7,1,1,10,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l up,SpriteGamepadThumbstickLUp,9,7,1,1,9,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l down,SpriteGamepadThumbstickLDown,11,7,1,1,11,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick l click,SpriteGamepadThumbstickLClick,16,13,1,1,16,12,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r left,SpriteGamepadThumbstickRLeft,12,9,1,1,12,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r right,SpriteGamepadThumbstickRRight,10,9,1,1,10,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r up,SpriteGamepadThumbstickRUp,9,9,1,1,9,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r down,SpriteGamepadThumbstickRDown,11,9,1,1,11,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,thumbstick r click,SpriteGamepadThumbstickRClick,16,15,1,1,16,14,1,1,FALSE
+INPUT_GAMEPAD_TYPE_XBOX,share,SpriteGamepadShare,6,19,1,1,6,18,1,1,FALSE
+InputIconDefineKeyboard,mouse left,SpriteMouseLeft,9,3,1,1,9,2,1,1,FALSE
+InputIconDefineKeyboard,mouse middle,SpriteMouseMiddle,11,3,1,1,11,2,1,1,FALSE
+InputIconDefineKeyboard,mouse right,SpriteMouseRight,10,3,1,1,10,2,1,1,FALSE
+InputIconDefineKeyboard,mouse wheel down,SpriteMouseWheelDown,13,3,1,1,13,2,1,1,FALSE
+InputIconDefineKeyboard,mouse wheel up,SpriteMouseWheelUp,12,3,1,1,12,2,1,1,FALSE
+InputIconDefineKeyboard,A,SpriteKeyboardA,18,11,1,1,18,3,1,1,FALSE
+InputIconDefineKeyboard,B,SpriteKeyboardB,23,4,1,1,23,4,1,1,FALSE
+InputIconDefineKeyboard,C,SpriteKeyboardC,21,12,1,1,21,4,1,1,FALSE
+InputIconDefineKeyboard,D,SpriteKeyboardD,20,11,1,1,20,3,1,1,FALSE
+InputIconDefineKeyboard,E,SpriteKeyboardE,19,10,1,1,19,2,1,1,FALSE
+InputIconDefineKeyboard,F,SpriteKeyboardF,21,11,1,1,21,3,1,1,FALSE
+InputIconDefineKeyboard,G,SpriteKeyboardG,22,11,1,1,22,3,1,1,FALSE
+InputIconDefineKeyboard,H,SpriteKeyboardH,23,11,1,1,23,3,1,1,FALSE
+InputIconDefineKeyboard,I,SpriteKeyboardI,24,10,1,1,24,2,1,1,FALSE
+InputIconDefineKeyboard,J,SpriteKeyboardJ,24,11,1,1,24,3,1,1,FALSE
+InputIconDefineKeyboard,K,SpriteKeyboardK,25,3,1,1,25,3,1,1,FALSE
+InputIconDefineKeyboard,L,SpriteKeyboardL,26,11,1,1,26,3,1,1,FALSE
+InputIconDefineKeyboard,M,SpriteKeyboardM,25,12,1,1,25,4,1,1,FALSE
+InputIconDefineKeyboard,N,SpriteKeyboardN,25,12,1,1,24,4,1,1,FALSE
+InputIconDefineKeyboard,O,SpriteKeyboardO,25,10,1,1,25,2,1,1,FALSE
+InputIconDefineKeyboard,P,SpriteKeyboardP,26,10,1,1,26,2,1,1,FALSE
+InputIconDefineKeyboard,Q,SpriteKeyboardQ,17,10,1,1,17,2,1,1,FALSE
+InputIconDefineKeyboard,R,SpriteKeyboardR,20,10,1,1,20,2,1,1,FALSE
+InputIconDefineKeyboard,S,SpriteKeyboardS,19,11,1,1,19,3,1,1,FALSE
+InputIconDefineKeyboard,T,SpriteKeyboardT,21,10,1,1,21,2,1,1,FALSE
+InputIconDefineKeyboard,U,SpriteKeyboardU,22,4,1,1,23,2,1,1,FALSE
+InputIconDefineKeyboard,V,SpriteKeyboardV,22,12,1,1,22,4,1,1,FALSE
+InputIconDefineKeyboard,W,SpriteKeyboardW,18,10,1,1,18,2,1,1,FALSE
+InputIconDefineKeyboard,X,SpriteKeyboardX,20,12,1,1,20,4,1,1,FALSE
+InputIconDefineKeyboard,Y,SpriteKeyboardY,22,10,1,1,22,2,1,1,FALSE
+InputIconDefineKeyboard,Z,SpriteKeyboardZ,19,12,1,1,19,4,1,1,FALSE
+InputIconDefineKeyboard,0,SpriteKeyboard0,26,9,1,1,26,1,1,1,FALSE
+InputIconDefineKeyboard,1,SpriteKeyboard1,17,9,1,1,17,1,1,1,FALSE
+InputIconDefineKeyboard,2,SpriteKeyboard2,18,9,1,1,18,1,1,1,FALSE
+InputIconDefineKeyboard,3,SpriteKeyboard3,19,9,1,1,19,1,1,1,FALSE
+InputIconDefineKeyboard,4,SpriteKeyboard4,20,9,1,1,20,1,1,1,FALSE
+InputIconDefineKeyboard,5,SpriteKeyboard5,21,9,1,1,21,1,1,1,FALSE
+InputIconDefineKeyboard,6,SpriteKeyboard6,22,9,1,1,22,1,1,1,FALSE
+InputIconDefineKeyboard,7,SpriteKeyboard7,23,9,1,1,23,1,1,1,FALSE
+InputIconDefineKeyboard,8,SpriteKeyboard8,24,9,1,1,24,1,1,1,FALSE
+InputIconDefineKeyboard,9,SpriteKeyboard9,25,9,1,1,25,1,1,1,FALSE
+InputIconDefineKeyboard,-,SpriteKeyboardMinus,30,9,1,1,30,1,1,1,FALSE
+InputIconDefineKeyboard,=,SpriteKeyboardEquals,29,9,1,1,29,1,1,1,FALSE
+InputIconDefineKeyboard,;,SpriteKeyboardSemicolon,30,11,1,1,30,3,1,1,FALSE
+InputIconDefineKeyboard,',SpriteKeyboardApostrophe,27,11,1,1,27,3,1,1,FALSE
+InputIconDefineKeyboard,",",SpriteKeyboardComma,27,14,1,1,27,6,1,1,FALSE
+InputIconDefineKeyboard,.,SpriteKeyboardPeriod,27,13,1,1,27,5,1,1,FALSE
+InputIconDefineKeyboard,],SpriteKeyboardSquareBracketClose,28,10,1,1,28,2,1,1,FALSE
+InputIconDefineKeyboard,[,SpriteKeyboardSquareBracketOpen,27,10,1,1,27,2,1,1,FALSE
+InputIconDefineKeyboard,/,SpriteKeyboardSlashForward,29,12,1,1,29,4,1,1,FALSE
+InputIconDefineKeyboard,\,SpriteKeyboardSlashBack,31,10,1,1,31,2,1,1,FALSE
+InputIconDefineKeyboard,scroll lock,SpriteKeyboardScrollLock,23,15,2,1,23,7,2,1,FALSE
+InputIconDefineKeyboard,caps lock,SpriteKeyboardCapsLock,19,14,2,1,19,6,2,1,FALSE
+InputIconDefineKeyboard,num lock,SpriteKeyboardNumLock,25,13,2,1,25,5,2,1,FALSE
+InputIconDefineKeyboard,left meta,SpriteKeyboardLeftMeta,18,12,1,1,18,4,1,1,FALSE
+InputIconDefineKeyboard,right meta,SpriteKeyboardRightMeta,18,12,1,1,18,4,1,1,FALSE
+InputIconDefineKeyboard,print screen,SpriteKeyboardPrintScreen,21,15,2,1,21,7,2,1,FALSE
+InputIconDefineKeyboard,pause break,SpriteKeyboardPauseBreak,28,15,1,1,28,7,1,1,FALSE
+InputIconDefineKeyboard,menu,SpriteKeyboardMenu,28,14,1,1,28,6,1,1,FALSE
+InputIconDefineKeyboard,escape,SpriteKeyboardEscape,17,8,1,1,17,0,1,1,FALSE
+InputIconDefineKeyboard,backspace,SpriteKeyboardBackspace,32,9,2,1,32,1,2,1,FALSE
+InputIconDefineKeyboard,space,SpriteKeyboardSpace,31,14,3,1,31,6,3,1,FALSE
+InputIconDefineKeyboard,enter,SpriteKeyboardEnter,32,10,2,2,32,2,2,2,FALSE
+InputIconDefineKeyboard,arrow up,SpriteKeyboardArrowUp,30,12,1,1,30,4,1,1,FALSE
+InputIconDefineKeyboard,arrow down,SpriteKeyboardArrowDown,32,12,1,1,32,4,1,1,FALSE
+InputIconDefineKeyboard,arrow left,SpriteKeyboardArrowLeft,33,12,1,1,33,4,1,1,FALSE
+InputIconDefineKeyboard,arrow right,SpriteKeyboardArrowRight,31,12,1,1,31,4,1,1,FALSE
+InputIconDefineKeyboard,tab,SpriteKeyboardTab,19,13,2,1,19,5,2,1,FALSE
+InputIconDefineKeyboard,right alt  ,13,2,1,17,5,2,1,FALSE
+InputIconDefineKeyboard,left alt  ,13,2,1,17,5,2,1,FALSE
+InputIconDefineKeyboard,alt  ,13,2,1,17,5,2,1,FALSE
+InputIconDefineKeyboard,right shift,SpriteKeyboardRightShift,17,11,1,1,17,3,1,1,FALSE
+InputIconDefineKeyboard,left shift,SpriteKeyboardLeftShift,17,11,1,1,17,3,1,1,FALSE
+InputIconDefineKeyboard,shift,SpriteKeyboardShift,17,11,1,1,17,3,1,1,FALSE
+InputIconDefineKeyboard,right ctrl,SpriteKeyboardRightCtrl,17,14,2,1,17,6,2,1,FALSE
+InputIconDefineKeyboard,left ctrl,SpriteKeyboardLeftCtrl,17,14,2,1,17,6,2,1,FALSE
+InputIconDefineKeyboard,ctrl,SpriteKeyboardCtrl,17,14,2,1,17,6,2,1,FALSE
+InputIconDefineKeyboard,f1,SpriteKeyboardF1,18,8,1,1,18,0,1,1,FALSE
+InputIconDefineKeyboard,f2,SpriteKeyboardF2,19,8,1,1,19,0,1,1,FALSE
+InputIconDefineKeyboard,f3,SpriteKeyboardF3,20,8,1,1,20,0,1,1,FALSE
+InputIconDefineKeyboard,f4,SpriteKeyboardF4,21,8,1,1,21,0,1,1,FALSE
+InputIconDefineKeyboard,f5,SpriteKeyboardF5,22,8,1,1,22,0,1,1,FALSE
+InputIconDefineKeyboard,f6,SpriteKeyboardF6,23,8,1,1,23,0,1,1,FALSE
+InputIconDefineKeyboard,f7,SpriteKeyboardF7,24,8,1,1,24,0,1,1,FALSE
+InputIconDefineKeyboard,f8,SpriteKeyboardF8,25,8,1,1,25,0,1,1,FALSE
+InputIconDefineKeyboard,f9,SpriteKeyboardF9,26,8,1,1,26,0,1,1,FALSE
+InputIconDefineKeyboard,f10,SpriteKeyboardF10,27,8,1,1,27,0,1,1,FALSE
+InputIconDefineKeyboard,f11,SpriteKeyboardF11,28,8,1,1,28,0,1,1,FALSE
+InputIconDefineKeyboard,f12,SpriteKeyboardF12,29,8,1,1,29,0,1,1,FALSE
+InputIconDefineKeyboard,numpad /,SpriteKeyboardNumpadSlashForward,29,12,1,1,29,4,1,1,FALSE
+InputIconDefineKeyboard,numpad *,SpriteKeyboardNumpadAsterisk,31,11,1,1,31,3,1,1,FALSE
+InputIconDefineKeyboard,numpad -,SpriteKeyboardNumpadMinus,27,9,1,1,27,1,1,1,FALSE
+InputIconDefineKeyboard,numpad +,SpriteKeyboardNumpadPlus,28,9,1,1,28,1,1,1,FALSE
+InputIconDefineKeyboard,numpad .,SpriteKeyboardNumpadPeriod,27,13,1,1,27,5,1,1,FALSE
+InputIconDefineKeyboard,numpad 0,SpriteKeyboardNumpad0,26,9,1,1,26,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 1,SpriteKeyboardNumpad1,17,9,1,1,17,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 2,SpriteKeyboardNumpad2,18,9,1,1,18,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 3,SpriteKeyboardNumpad3,19,9,1,1,19,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 4,SpriteKeyboardNumpad4,20,9,1,1,20,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 5,SpriteKeyboardNumpad5,21,9,1,1,21,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 6,SpriteKeyboardNumpad6,22,9,1,1,22,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 7,SpriteKeyboardNumpad7,23,9,1,1,23,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 8,SpriteKeyboardNumpad8,24,9,1,1,24,1,1,1,FALSE
+InputIconDefineKeyboard,numpad 9,SpriteKeyboardNumpad9,25,9,1,1,25,1,1,1,FALSE
+InputIconDefineKeyboard,delete,SpriteKeyboardDelete,21,13,2,1,21,5,2,1,FALSE
+InputIconDefineKeyboard,insert,SpriteKeyboardInsert,17,12,1,1,17,4,1,1,FALSE
+InputIconDefineKeyboard,home,SpriteKeyboardHome,21,14,2,1,21,6,2,1,FALSE
+InputIconDefineKeyboard,page up,SpriteKeyboardPageUp,23,14,2,1,23,6,2,1,FALSE
+InputIconDefineKeyboard,page down,SpriteKeyboardPageDown,25,14,2,1,25,6,2,1,FALSE
+InputIconDefineKeyboard,end,SpriteKeyboardEnd,23,13,2,1,23,5,2,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,B,SpriteGamepadB,9,1,1,1,14,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,A,SpriteGamepadA,8,1,1,1,13,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,Y,SpriteGamepadY,11,1,1,1,16,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,X,SpriteGamepadX,10,1,1,1,15,0,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,L,SpriteGamepadL,11,19,1,1,11,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,R,SpriteGamepadR,12,19,1,1,12,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,ZL,SpriteGamepadZL,13,23,1,1,13,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,ZR,SpriteGamepadZR,14,23,1,1,14,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,minus,SpriteGamepadMinus,4,21,1,1,4,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,plus,SpriteGamepadPlus,5,21,1,1,5,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,dpad left,SpriteGamepadDpadLeftSwitch,12,23,1,1,12,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,dpad right,SpriteGamepadDpadRightSwitch,10,23,1,1,10,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,dpad up,SpriteGamepadDpadUpSwitch,9,23,1,1,9,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,dpad down,SpriteGamepadDpadDownSwitch,11,23,1,1,11,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l left,SpriteGamepadThumbstickLLeft,12,7,1,1,12,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l right,SpriteGamepadThumbstickLRight,10,7,1,1,10,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l up,SpriteGamepadThumbstickLUp,9,7,1,1,9,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l down,SpriteGamepadThumbstickLDown,11,7,1,1,11,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick l click,SpriteGamepadThumbstickLClick,16,13,1,1,16,12,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r left,SpriteGamepadThumbstickRLeft,12,9,1,1,12,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r right,SpriteGamepadThumbstickRRight,10,9,1,1,10,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r up,SpriteGamepadThumbstickRUp,9,9,1,1,9,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r down,SpriteGamepadThumbstickRDown,11,9,1,1,11,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,thumbstick r click,SpriteGamepadThumbstickRClick,16,15,1,1,16,14,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,home,SpriteGamepadHome,2,21,1,1,2,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,capture,SpriteGamepadCapture,12,21,1,1,12,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_SWITCH,C,SpriteGamepadC,10,21,1,1,10,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face south,SpriteGamepadFaceSouth,6,11,1,1,2,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face east,SpriteGamepadFaceEast,5,11,1,1,3,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face west,SpriteGamepadFaceWest,7,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face north,SpriteGamepadFaceNorth,4,11,1,1,0,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,SL,SpriteGamepadSL,17,23,1,1,17,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,SR,SpriteGamepadSR,18,23,1,1,18,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,minus,SpriteGamepadMinus,13,21,1,1,13,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick left,SpriteGamepadThumbstickLeft,12,5,1,1,12,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick right,SpriteGamepadThumbstickRight,10,5,1,1,10,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick up,SpriteGamepadThumbstickUp,9,5,1,1,9,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick down,SpriteGamepadThumbstickDown,11,5,1,1,11,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick click,SpriteGamepadThumbstickClick,16,3,1,1,16,2,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,capture,SpriteGamepadCapture,12,21,1,1,12,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face south,SpriteGamepadFaceSouth,6,11,1,1,2,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face east,SpriteGamepadFaceEast,5,11,1,1,3,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face west,SpriteGamepadFaceWest,7,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face north,SpriteGamepadFaceNorth,4,11,1,1,0,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,SL,SpriteGamepadSL,17,23,1,1,17,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,SR,SpriteGamepadSR,18,23,1,1,18,22,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,plus,SpriteGamepadPlus,5,21,1,1,5,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick left,SpriteGamepadThumbstickLeft,12,5,1,1,12,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick right,SpriteGamepadThumbstickRight,10,5,1,1,10,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick up,SpriteGamepadThumbstickUp,9,5,1,1,9,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick down,SpriteGamepadThumbstickDown,11,5,1,1,11,4,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick click,SpriteGamepadThumbstickClick,16,3,1,1,16,2,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,home,SpriteGamepadHome,2,21,1,1,2,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,C,SpriteGamepadC,10,21,1,1,10,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,cross,SpriteGamepadCross,23,17,2,1,23,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS4,circle,SpriteGamepadCircle,19,17,2,1,19,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS4,square,SpriteGamepadSquare,21,17,2,1,21,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS4,triangle,SpriteGamepadTriangle,17,17,2,1,17,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS4,L1,SpriteGamepadL1,19,19,1,1,19,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,R1,SpriteGamepadR1,20,19,1,1,20,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,L2,SpriteGamepadL2,21,19,1,1,21,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,R2,SpriteGamepadR2,22,19,1,1,22,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,share,SpriteGamepadSharePS4,19,21,1,1,19,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,options,SpriteGamepadOptionsPS4,18,21,1,1,18,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,dpad left,SpriteGamepadDpadLeftPS,4,8,1,1,4,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,dpad right,SpriteGamepadDpadRightPS,2,8,1,1,2,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,dpad up,SpriteGamepadDpadUpPS,1,8,1,1,1,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,dpad down,SpriteGamepadDpadDownPS,3,8,1,1,3,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l left,SpriteGamepadThumbstickLLeft,12,7,1,1,12,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l right,SpriteGamepadThumbstickLRight,10,7,1,1,10,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l up,SpriteGamepadThumbstickLUp,9,7,1,1,9,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick l down,SpriteGamepadThumbstickLDown,11,7,1,1,11,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,L3,SpriteGamepadL3,16,13,1,1,16,12,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r left,SpriteGamepadThumbstickRLeft,12,9,1,1,12,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r right,SpriteGamepadThumbstickRRight,10,9,1,1,10,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r up,SpriteGamepadThumbstickRUp,9,9,1,1,9,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,thumbstick r down,SpriteGamepadThumbstickRDown,11,9,1,1,11,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,R3,SpriteGamepadR3,16,15,1,1,16,14,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS4,touchpad,SpriteGamepadTouchpadPS4,22,21,1,1,22,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,mic,SpriteGamepadMic,25,17,1,1,25,16,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,touchpad,SpriteGamepadTouchpadPS5,24,21,1,1,24,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,create,SpriteGamepadCreate,19,21,1,1,19,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,options,SpriteGamepadOptionsPS5,18,21,1,1,18,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,cross,SpriteGamepadCross,23,17,2,1,23,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS5,circle,SpriteGamepadCircle,19,17,2,1,19,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS5,square,SpriteGamepadSquare,21,17,2,1,21,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS5,triangle,SpriteGamepadTriangle,17,17,2,1,17,16,2,1,TRUE
+INPUT_GAMEPAD_TYPE_PS5,L1,SpriteGamepadL1,19,19,1,1,19,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,R1,SpriteGamepadR1,20,19,1,1,20,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,L2,SpriteGamepadL2,21,19,1,1,21,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,R2,SpriteGamepadR2,22,19,1,1,22,18,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,dpad left,SpriteGamepadDpadLeftPS,4,8,1,1,4,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,dpad right,SpriteGamepadDpadRightPS,2,8,1,1,2,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,dpad up,SpriteGamepadDpadUpPS,1,8,1,1,1,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,dpad down,SpriteGamepadDpadDownPS,3,8,1,1,3,7,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l left,SpriteGamepadThumbstickLLeft,12,7,1,1,12,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l right,SpriteGamepadThumbstickLRight,10,7,1,1,10,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l up,SpriteGamepadThumbstickLUp,9,7,1,1,9,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick l down,SpriteGamepadThumbstickLDown,11,7,1,1,11,6,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,L3,SpriteGamepadL3,16,13,1,1,16,12,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r left,SpriteGamepadThumbstickRLeft,12,9,1,1,12,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r right,SpriteGamepadThumbstickRRight,10,9,1,1,10,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r up,SpriteGamepadThumbstickRUp,9,9,1,1,9,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,thumbstick r down,SpriteGamepadThumbstickRDown,11,9,1,1,11,8,1,1,FALSE
+INPUT_GAMEPAD_TYPE_PS5,R3,SpriteGamepadR3,16,15,1,1,16,14,1,1,FALSE
