@@ -17,7 +17,6 @@
 #    Sprite Editor > Confirm Dialogs > Load vector sprites as vectors
 #    Note that the Scribble library does not support SVG
 
-
 import sys
 if sys.version_info[0] != 3:
     exit("This script requires Python 3.")
