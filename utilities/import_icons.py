@@ -4,7 +4,7 @@
 # 1. Run from a subdirectory adjacent to an Input project
 #    - Input's Icon configs are overwritten as appropriate
 #    - For graphic sets, "Prompts" with "Alternates" directories are written to "data"
-# 2. Import font/graphic assets into GameMaker in your format of choice
+# 2. Import font or graphic assets into GameMaker in your format of choice
 # 3. Add the appropriate license to your project datafiles
 #
 # Additional tips from Antti Vaihia, Gleb Tsereteli
@@ -25,6 +25,7 @@ import csv
 import zipfile
 import urllib.request
 import webbrowser
+import subprocess
 from pathlib import Path
 
 FILES_TO_EDIT = [
@@ -35,9 +36,15 @@ FILES_TO_EDIT = [
     Path("../scripts/__InputIconConfigXbox/__InputIconConfigXbox.gml"),
 ]
 
+DATA_PATH_NAME = "data"
+OUT_PATH = Path(DATA_PATH_NAME) / "Prompts (Import me!)"
+OUT_ALT = OUT_PATH / "Alternate"
+
+ZIP_CACHE = {}
+
 def load_csv(path):
     print("Loading CSV")
-    with open(path, newline="", encoding="utf-8") as f:
+    with open(Path(DATA_PATH_NAME) / path, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     print(f"  Loaded {len(rows)} rows")
     return rows
@@ -52,7 +59,7 @@ def apply_config_replacements(rows, value_field):
     print("Applying replacements")
 
     for file_path in FILES_TO_EDIT:
-        print(f"  Writing {file_path}")
+        print(f"  Rewriting {file_path}")
         if not file_path.exists():
             print("  File not found")
             continue
@@ -75,35 +82,32 @@ def apply_config_replacements(rows, value_field):
         file_path.write_text("\n".join(lines), encoding="utf-8")
     print("  Replacement complete")
 
-ZIP_CACHE = {}
-ZIP_PATH = "data/kenney_input-prompts_1.5.zip"
-ZIP_URL = "https://kenney.nl/media/pages/assets/input-prompts/8de120163f-1777890371/kenney_input-prompts_1.5.zip"
-OUT_VECTOR = Path("data/Prompts (Import me!)")
-OUT_ALT = Path("data/Prompts (Import me!)/Alternate")
-
-def ensure_zip():
-    if Path(ZIP_PATH).exists():
+def ensure_zip(path, url):
+    if Path(path).exists():
         return
-    print("Downloading zip…")
-    urllib.request.urlretrieve(ZIP_URL, ZIP_PATH)
+    print(f"Downloading {path}…")
+    urllib.request.urlretrieve(url, path)
 
-def get_zip():
-    ensure_zip()
-    if ZIP_PATH not in ZIP_CACHE:
-        ZIP_CACHE[ZIP_PATH] = zipfile.ZipFile(ZIP_PATH, "r")
-    return ZIP_CACHE[ZIP_PATH]
+def get_zip(url):
+    path = Path(DATA_PATH_NAME) / url.split("/")[-1]
+    ensure_zip(path, url)
+    if path not in ZIP_CACHE:
+        ZIP_CACHE[path] = zipfile.ZipFile(path, "r")
+    return ZIP_CACHE[path]
 
 def subfile_path(p):
     return p.split(".zip/", 1)[-1] if ".zip/" in p else p
 
-def extract(inner, out_dir, name):
-    zfile = get_zip()
+def extract(zip_url, inner, out_dir, name, ext="svg"):
+    z = get_zip(zip_url)
     out_dir.mkdir(parents=True, exist_ok=True)
-    out = out_dir / f"{name}.svg"
-    with zfile.open(inner) as s, open(out, "wb") as subfile:
-        subfile.write(s.read())
+    out = out_dir / f"{name}.{ext}"
+    with z.open(inner) as s, open(out, "wb") as f:
+        f.write(s.read())
 
-def write_macros(rows):
+def write_macros(rows=None):
+    if not rows:
+        return
     file_path = FILES_TO_EDIT[0]
     print(f"Writing macros to {file_path}")
     if not file_path.exists():
@@ -111,7 +115,6 @@ def write_macros(rows):
         return
 
     lines = file_path.read_text(encoding="utf-8").splitlines()
-    lines = [l for l in lines if not l.lstrip().startswith("#macro ")]
     entries = []
     seen = set()
     for row in rows:
@@ -154,61 +157,174 @@ def yn(prompt, default=False):
         return default
     return answer == "y"
 
+PIXEL_SCALE = 16
+def crop_region(img, x, y, w, h):
+    return img.crop((
+        x * pixel_scale,
+        y * pixel_scale,
+        (x + w) * pixel_scale,
+        (y + h) * pixel_scale,
+    ))
+
+def compose_halves(img):
+    img = img.convert("RGBA")
+    w, h = img.size
+    half = w // 2
+    left = img.crop((0, 0, half, h)).convert("RGBA")
+    right = img.crop((half, 0, w, h)).convert("RGBA")
+    left.alpha_composite(right)
+    return left
+
+def process_pixel_row(row, source_img):
+    asset = row["Asset Name"].strip()
+    compose = row["Compose"].strip().upper() == "TRUE"
+    main = crop_region(source_img, int(row["X"]), int(row["Y"]), int(row["W"]), int(row["H"]))
+    alt = crop_region(source_img, int(row["Alt X"]), int(row["Alt Y"]), int(row["Alt W"]), int(row["Alt H"]))
+    if compose:
+        main = compose_halves(main)
+        alt = compose_halves(alt)
+    OUT_PATH.mkdir(parents=True, exist_ok=True)
+    OUT_ALT.mkdir(parents=True, exist_ok=True)
+    main.save(OUT_PATH / f"{asset}.png")
+    alt.save(OUT_ALT / f"{asset}.png")
+
+VERSION_STRING = "#macro INPUT_VERSION"
+def get_version(path):
+    for line in path.split("\n"):
+        if VERSION_STRING in line:
+            return line.split('"')[1]
+
+VECTOR_CSV_PATH = "Kenney2Input.csv"
+VECTOR_ZIP_URL = "https://kenney.nl/media/pages/assets/input-prompts/8de120163f-1777890371/kenney_input-prompts_1.5.zip"
+VECTOR_WEB_URL = "https://kenney.nl/knowledge-base/game-assets-2d/using-input-prompts"
+CC0_URL = "https://creativecommons.org/publicdomain/zero/1.0/"
 def import_kenney_vector():
-    rows = load_csv("data/Kenney2Input.csv")
+    rows = load_csv(VECTOR_CSV_PATH)
     for row in rows:
         name = row["Asset Name"].strip()
         vector = row["Vector"].strip()
         alternate = row.get("Vector Alternate", "").strip()
         if vector:
-            extract(subfile_path(vector), OUT_VECTOR, name)
+            extract(VECTOR_ZIP_URL ,subfile_path (vector),OUT_PATH ,name)
         if alternate:
-            extract(subfile_path(alternate), OUT_ALT, name)
-
-    write_macros([])
-    apply_config_replacements(rows, "Asset Name")
+            extract(VECTOR_ZIP_URL ,subfile_path (alternate),OUT_ALT ,name)
+    if restore_configs():
+        write_macros()
+        apply_config_replacements(rows, "Asset Name")
     if yn("Open asset website?"):
-        webbrowser.open("https://kenney.nl/knowledge-base/game-assets-2d/using-input-prompts")
+        webbrowser.open(VECTOR_WEB_URL)
     if yn("Open license?"):
-        webbrowser.open("https://creativecommons.org/publicdomain/zero/1.0/")
-    webbrowser.open(OUT_VECTOR.resolve().as_uri())
+        webbrowser.open(CC0_URL)
+    webbrowser.open(OUT_PATH.resolve().as_uri())
+    print("Done")
+
+PIXEL_CSV_PATH = "KenneyPixel2Input.csv"
+PIXEL_1BIT_ZIP_URL = "https://kenney.nl/media/pages/assets/input-prompts-pixel-1-bit/ba3f0202e6-1774771290/kenney_input-prompts-pixel-1-bit.zip"
+PIXEL_COLOR_ZIP_URL = "https://kenney.nl/media/pages/assets/input-prompts-pixel/84a40a31f6-1774771309/kenney_input-prompts-pixel.zip"
+PIXEL_1BIT_WEB_URL = "https://kenney.nl/assets/input-prompts-pixel-1-bit"    
+PIXEL_COLOR_WEB_URL = "https://kenney.nl/assets/input-prompts-pixel"
+def import_kenney_pixel():
+    try:
+        from PIL import Image
+    except ImportError:
+        print("Installing Pillow…")
+        subprocess.check_call([
+            sys.executable,
+            "-m",
+            "pip",
+            "install",
+            "Pillow",
+        ])
+        from PIL import Image
+    rows = load_csv(PIXEL_CSV_PATH)
+    if restore_configs():
+        write_macros()
+        apply_config_replacements(rows, "Asset Name")
+
+    if yn("Use color icons?"):
+        zip_url = PIXEL_COLOR_ZIP_URL
+        web_url = PIXEL_COLOR_WEB_URL
+        tilemap_path = "Tilemap/tilemap_packed.png"
+    else:
+        zip_url = PIXEL_1BIT_ZIP_URL
+        web_url = PIXEL_1BIT_WEB_URL
+        tilemap_path = "Tilemap/tilemap_white_packed.png"
+    z = get_zip(zip_url)
+    with z.open(tilemap_path) as f:
+        source_img = Image.open(f).convert("RGBA")
+    for row in rows:
+        process_pixel_row(row, source_img)
+
+    if yn("Open asset website?"):
+        webbrowser.open(web_url)
+    if yn("Open license?"):
+        webbrowser.open(CC0_URL)
+    webbrowser.open(OUT_PATH.resolve().as_uri())
     print("Done")
 
 def import_font(csv_path, zip_url=None, license_url=None):
     rows = load_csv(csv_path)
-    write_macros(rows)
-    apply_config_replacements(rows, "Glyph Name")
+    if restore_configs():
+        write_macros(rows)
+        apply_config_replacements(rows, "Glyph Name")
+
     if zip_url:
         if yn("Download font?"):
             webbrowser.open(zip_url)
     if license_url:
         if yn("Open license?"):
             webbrowser.open(license_url)
-
     print("Done")
+
+PROMPTFONT_CSV_PATH = "PromptFont2Input.csv"
+PROMPTFONT_ZIP_URL = "https://shinmera.com/project/promptfont/releases/download/latest/promptfont.zip"
+PROMPTFONT_LICENSE_URL = "https://shinmera.com/docs/promptfont/LICENSE.txt"
+def import_promptfont():
+    import_font(PROMPTFONT_CSV_PATH, PROMPTFONT_ZIP_URL, PROMPTFONT_LICENSE_URL)
+
+MARUMONICA_CSV_PATH = "MaruMonica2Input.csv"
+MARUMONIA_ZIP_URL = "https://booth.pm/downloadables/7530579"
+MARUMONIA_LICENSE_URL = "https://hicchicc.github.io/00ff/"
+def import_marumonica():
+    import_font(MARUMONICA_CSV_PATH, MARUMONIA_ZIP_URL, MARUMONIA_LICENSE_URL)
+
+SOURCE_URL = "https://codeberg.org/offalynne/Input/raw/branch/main/"
+REMOTE_VERSION_PATH = SOURCE_URL + "scripts/__InputConstants/__InputConstants.gml"
+def restore_configs():
+    local = Path("../" + "/".join(REMOTE_VERSION_PATH.split("/")[-3:])).read_text(encoding="utf-8", errors="ignore")
+    remote = urllib.request.urlopen(REMOTE_VERSION_PATH).read().decode("utf-8", errors="ignore")
+
+    ver_local = get_version(local)
+    ver_remote = get_version(remote)
+    if ver_local != ver_remote:
+        print("Input version mismatch")
+        print("  Local :", ver_local)
+        print("  Remote:", ver_remote)
+        return False
+
+    for path in FILES_TO_EDIT:
+        url = (SOURCE_URL + path.as_posix().removeprefix("../"))
+        print(f"  Restoring {path}")
+        path.write_bytes(urllib.request.urlopen(url).read())
+    return True
 
 print("Choose icon set to import")
 choice = input(
-    "1. Kenney Vector Prompts\n"
-    "2. PromptFont Glyphs\n"
-    "3. MaruMonica Glyphs\n"
-    "4. Exit\n"
+    "1. Kenney Vector: SVGs\n"
+    "2. Kenney Pixel: PNGs\n"
+    "3. PromptFont: Vector Font\n"
+    "4. MaruMonica: Pixel Font\n"
+    "5. Restore default Icon configs\n"
+    "6. Exit\n"
     "> "
 )
-
 if choice == "1":
     import_kenney_vector()
-
 elif choice == "2":
-    import_font(
-        "data/PromptFont2Input.csv",
-        zip_url = "https://shinmera.com/project/promptfont/releases/download/latest/promptfont.zip",
-        license_url = "https://shinmera.com/docs/promptfont/LICENSE.txt",
-    )
-
+    import_kenney_pixel()
 elif choice == "3":
-    import_font(
-        "data/MaruMonica2Input.csv",
-        zip_url = "https://booth.pm/downloadables/7530579",
-        license_url = "https://hicchicc.github.io/00ff/",
-    )
+    import_promptfont()
+elif choice == "4":
+    import_marumonica()
+elif choice == "5":
+    restore_configs()

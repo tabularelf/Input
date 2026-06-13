@@ -1,7 +1,7 @@
-Input Config,Input String,Asset Name,Tile X,Tile Y,Tile Width,Tile Height,Alt X,Alt Y,Alt Width,Alt Height,Compose
+Input Config,Input String,Asset Name,X,Y,W,H,Alt X,Alt Y,Alt W,Alt H,Compose
 INPUT_GAMEPAD_TYPE_UNKNOWN,face south,SpriteGamepadFaceSouth,6,11,1,1,2,9,1,1,FALSE
-INPUT_GAMEPAD_TYPE_UNKNOWN,face east,SpriteGamepadFaceEast,5,11,1,1,3,9,1,1,FALSE
-INPUT_GAMEPAD_TYPE_UNKNOWN,face west,SpriteGamepadFaceWest,7,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,face east,SpriteGamepadFaceEast,5,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_UNKNOWN,face west,SpriteGamepadFaceWest,7,11,1,1,3,9,1,1,FALSE
 INPUT_GAMEPAD_TYPE_UNKNOWN,face north,SpriteGamepadFaceNorth,4,11,1,1,0,9,1,1,FALSE
 INPUT_GAMEPAD_TYPE_UNKNOWN,shoulder l,SpriteGamepadShoulderL,19,19,1,1,19,18,1,1,FALSE
 INPUT_GAMEPAD_TYPE_UNKNOWN,shoulder r,SpriteGamepadShoulderR,20,19,1,1,20,18,1,1,FALSE
@@ -56,7 +56,7 @@ InputIconDefineKeyboard,mouse right,SpriteMouseRight,10,3,1,1,10,2,1,1,FALSE
 InputIconDefineKeyboard,mouse wheel down,SpriteMouseWheelDown,13,3,1,1,13,2,1,1,FALSE
 InputIconDefineKeyboard,mouse wheel up,SpriteMouseWheelUp,12,3,1,1,12,2,1,1,FALSE
 InputIconDefineKeyboard,A,SpriteKeyboardA,18,11,1,1,18,3,1,1,FALSE
-InputIconDefineKeyboard,B,SpriteKeyboardB,23,4,1,1,23,4,1,1,FALSE
+InputIconDefineKeyboard,B,SpriteKeyboardB,23,12,1,1,23,4,1,1,FALSE
 InputIconDefineKeyboard,C,SpriteKeyboardC,21,12,1,1,21,4,1,1,FALSE
 InputIconDefineKeyboard,D,SpriteKeyboardD,20,11,1,1,20,3,1,1,FALSE
 InputIconDefineKeyboard,E,SpriteKeyboardE,19,10,1,1,19,2,1,1,FALSE
@@ -65,7 +65,7 @@ InputIconDefineKeyboard,G,SpriteKeyboardG,22,11,1,1,22,3,1,1,FALSE
 InputIconDefineKeyboard,H,SpriteKeyboardH,23,11,1,1,23,3,1,1,FALSE
 InputIconDefineKeyboard,I,SpriteKeyboardI,24,10,1,1,24,2,1,1,FALSE
 InputIconDefineKeyboard,J,SpriteKeyboardJ,24,11,1,1,24,3,1,1,FALSE
-InputIconDefineKeyboard,K,SpriteKeyboardK,25,3,1,1,25,3,1,1,FALSE
+InputIconDefineKeyboard,K,SpriteKeyboardK,23,10,1,1,23,2,1,1,FALSE
 InputIconDefineKeyboard,L,SpriteKeyboardL,26,11,1,1,26,3,1,1,FALSE
 InputIconDefineKeyboard,M,SpriteKeyboardM,25,12,1,1,25,4,1,1,FALSE
 InputIconDefineKeyboard,N,SpriteKeyboardN,25,12,1,1,24,4,1,1,FALSE
@@ -75,7 +75,7 @@ InputIconDefineKeyboard,Q,SpriteKeyboardQ,17,10,1,1,17,2,1,1,FALSE
 InputIconDefineKeyboard,R,SpriteKeyboardR,20,10,1,1,20,2,1,1,FALSE
 InputIconDefineKeyboard,S,SpriteKeyboardS,19,11,1,1,19,3,1,1,FALSE
 InputIconDefineKeyboard,T,SpriteKeyboardT,21,10,1,1,21,2,1,1,FALSE
-InputIconDefineKeyboard,U,SpriteKeyboardU,22,4,1,1,23,2,1,1,FALSE
+InputIconDefineKeyboard,U,SpriteKeyboardU,23,10,1,1,23,2,1,1,FALSE
 InputIconDefineKeyboard,V,SpriteKeyboardV,22,12,1,1,22,4,1,1,FALSE
 InputIconDefineKeyboard,W,SpriteKeyboardW,18,10,1,1,18,2,1,1,FALSE
 InputIconDefineKeyboard,X,SpriteKeyboardX,20,12,1,1,20,4,1,1,FALSE
@@ -118,9 +118,9 @@ InputIconDefineKeyboard,arrow down,SpriteKeyboardArrowDown,32,12,1,1,32,4,1,1,FA
 InputIconDefineKeyboard,arrow left,SpriteKeyboardArrowLeft,33,12,1,1,33,4,1,1,FALSE
 InputIconDefineKeyboard,arrow right,SpriteKeyboardArrowRight,31,12,1,1,31,4,1,1,FALSE
 InputIconDefineKeyboard,tab,SpriteKeyboardTab,19,13,2,1,19,5,2,1,FALSE
-InputIconDefineKeyboard,right alt  ,13,2,1,17,5,2,1,FALSE
-InputIconDefineKeyboard,left alt  ,13,2,1,17,5,2,1,FALSE
-InputIconDefineKeyboard,alt  ,13,2,1,17,5,2,1,FALSE
+InputIconDefineKeyboard,right alt,SpriteKeyboardRightAlt,17,13,2,1,17,5,2,1,FALSE
+InputIconDefineKeyboard,left alt,SpriteKeyboardLeftAlt,17,13,2,1,17,5,2,1,FALSE
+InputIconDefineKeyboard,alt,SpriteKeyboardAlt,17,13,2,1,17,5,2,1,FALSE
 InputIconDefineKeyboard,right shift,SpriteKeyboardRightShift,17,11,1,1,17,3,1,1,FALSE
 InputIconDefineKeyboard,left shift,SpriteKeyboardLeftShift,17,11,1,1,17,3,1,1,FALSE
 InputIconDefineKeyboard,shift,SpriteKeyboardShift,17,11,1,1,17,3,1,1,FALSE
@@ -188,12 +188,12 @@ INPUT_GAMEPAD_TYPE_SWITCH,home,SpriteGamepadHome,2,21,1,1,2,20,1,1,FALSE
 INPUT_GAMEPAD_TYPE_SWITCH,capture,SpriteGamepadCapture,12,21,1,1,12,20,1,1,FALSE
 INPUT_GAMEPAD_TYPE_SWITCH,C,SpriteGamepadC,10,21,1,1,10,20,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face south,SpriteGamepadFaceSouth,6,11,1,1,2,9,1,1,FALSE
-INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face east,SpriteGamepadFaceEast,5,11,1,1,3,9,1,1,FALSE
-INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face west,SpriteGamepadFaceWest,7,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face east,SpriteGamepadFaceEast,5,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face west,SpriteGamepadFaceWest,7,11,1,1,3,9,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,face north,SpriteGamepadFaceNorth,4,11,1,1,0,9,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,SL,SpriteGamepadSL,17,23,1,1,17,22,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,SR,SpriteGamepadSR,18,23,1,1,18,22,1,1,FALSE
-INPUT_GAMEPAD_TYPE_JOYCON_LEFT,minus,SpriteGamepadMinus,13,21,1,1,13,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_LEFT,minus,SpriteGamepadMinusJoyCon,13,21,1,1,13,20,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick left,SpriteGamepadThumbstickLeft,12,5,1,1,12,4,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick right,SpriteGamepadThumbstickRight,10,5,1,1,10,4,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick up,SpriteGamepadThumbstickUp,9,5,1,1,9,4,1,1,FALSE
@@ -201,12 +201,12 @@ INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick down,SpriteGamepadThumbstickDown,11,5,
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,thumbstick click,SpriteGamepadThumbstickClick,16,3,1,1,16,2,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_LEFT,capture,SpriteGamepadCapture,12,21,1,1,12,20,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face south,SpriteGamepadFaceSouth,6,11,1,1,2,9,1,1,FALSE
-INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face east,SpriteGamepadFaceEast,5,11,1,1,3,9,1,1,FALSE
-INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face west,SpriteGamepadFaceWest,7,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face east,SpriteGamepadFaceEast,5,11,1,1,1,9,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face west,SpriteGamepadFaceWest,7,11,1,1,3,9,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,face north,SpriteGamepadFaceNorth,4,11,1,1,0,9,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,SL,SpriteGamepadSL,17,23,1,1,17,22,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,SR,SpriteGamepadSR,18,23,1,1,18,22,1,1,FALSE
-INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,plus,SpriteGamepadPlus,5,21,1,1,5,20,1,1,FALSE
+INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,plus,SpriteGamepadPlusJoyCon,14,21,1,1,14,20,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick left,SpriteGamepadThumbstickLeft,12,5,1,1,12,4,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick right,SpriteGamepadThumbstickRight,10,5,1,1,10,4,1,1,FALSE
 INPUT_GAMEPAD_TYPE_JOYCON_RIGHT,thumbstick up,SpriteGamepadThumbstickUp,9,5,1,1,9,4,1,1,FALSE
