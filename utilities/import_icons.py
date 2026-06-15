@@ -37,8 +37,9 @@ FILES_TO_EDIT = [
 ]
 
 DATA_PATH_NAME = "data"
-OUT_PATH = Path(DATA_PATH_NAME) / "Prompts (Import me!)"
-OUT_ALT = OUT_PATH / "Alternate"
+OUT_PATH       = Path(DATA_PATH_NAME) / "Prompts (Import me!)"
+OUT_ALT        = OUT_PATH / "Alternate"
+CSV_FIELD_NAME = "Asset Name"
 
 ZIP_CACHE = {}
 
@@ -160,10 +161,10 @@ def yn(prompt, default=False):
 PIXEL_SCALE = 16
 def crop_region(img, x, y, w, h):
     return img.crop((
-        x * pixel_scale,
-        y * pixel_scale,
-        (x + w) * pixel_scale,
-        (y + h) * pixel_scale,
+        x * PIXEL_SCALE,
+        y * PIXEL_SCALE,
+        (x + w) * PIXEL_SCALE,
+        (y + h) * PIXEL_SCALE,
     ))
 
 def compose_halves(img):
@@ -176,17 +177,17 @@ def compose_halves(img):
     return left
 
 def process_pixel_row(row, source_img):
-    asset = row["Asset Name"].strip()
+    asset   = row[CSV_FIELD_NAME].strip()
     compose = row["Compose"].strip().upper() == "TRUE"
-    main = crop_region(source_img, int(row["X"]), int(row["Y"]), int(row["W"]), int(row["H"]))
-    alt = crop_region(source_img, int(row["Alt X"]), int(row["Alt Y"]), int(row["Alt W"]), int(row["Alt H"]))
+    main    = crop_region(source_img, int(row["X"]),     int(row["Y"]),     int(row["W"]),     int(row["H"]))
+    alt     = crop_region(source_img, int(row["Alt X"]), int(row["Alt Y"]), int(row["Alt W"]), int(row["Alt H"]))
     if compose:
         main = compose_halves(main)
         alt = compose_halves(alt)
     OUT_PATH.mkdir(parents=True, exist_ok=True)
-    OUT_ALT.mkdir(parents=True, exist_ok=True)
+    OUT_ALT.mkdir( parents=True, exist_ok=True)
     main.save(OUT_PATH / f"{asset}.png")
-    alt.save(OUT_ALT / f"{asset}.png")
+    alt.save( OUT_ALT  / f"{asset}.png")
 
 VERSION_STRING = "#macro INPUT_VERSION"
 def get_version(path):
@@ -195,13 +196,13 @@ def get_version(path):
             return line.split('"')[1]
 
 VECTOR_CSV_PATH = "Kenney2Input.csv"
-VECTOR_ZIP_URL = "https://kenney.nl/media/pages/assets/input-prompts/8de120163f-1777890371/kenney_input-prompts_1.5.zip"
-VECTOR_WEB_URL = "https://kenney.nl/knowledge-base/game-assets-2d/using-input-prompts"
-CC0_URL = "https://creativecommons.org/publicdomain/zero/1.0/"
+VECTOR_ZIP_URL  = "https://kenney.nl/media/pages/assets/input-prompts/8de120163f-1777890371/kenney_input-prompts_1.5.zip"
+VECTOR_WEB_URL  = "https://kenney.nl/knowledge-base/game-assets-2d/using-input-prompts"
+CC0_URL         = "https://creativecommons.org/publicdomain/zero/1.0/"
 def import_kenney_vector():
     rows = load_csv(VECTOR_CSV_PATH)
     for row in rows:
-        name = row["Asset Name"].strip()
+        name   = row[CSV_FIELD_NAME].strip()
         vector = row["Vector"].strip()
         alternate = row.get("Vector Alternate", "").strip()
         if vector:
@@ -210,7 +211,7 @@ def import_kenney_vector():
             extract(VECTOR_ZIP_URL ,subfile_path (alternate),OUT_ALT ,name)
     if restore_configs():
         write_macros()
-        apply_config_replacements(rows, "Asset Name")
+        apply_config_replacements(rows, CSV_FIELD_NAME)
     if yn("Open asset website?"):
         webbrowser.open(VECTOR_WEB_URL)
     if yn("Open license?"):
@@ -218,10 +219,10 @@ def import_kenney_vector():
     webbrowser.open(OUT_PATH.resolve().as_uri())
     print("Done")
 
-PIXEL_CSV_PATH = "KenneyPixel2Input.csv"
-PIXEL_1BIT_ZIP_URL = "https://kenney.nl/media/pages/assets/input-prompts-pixel-1-bit/ba3f0202e6-1774771290/kenney_input-prompts-pixel-1-bit.zip"
+PIXEL_CSV_PATH      = "KenneyPixel2Input.csv"
+PIXEL_1BIT_ZIP_URL  = "https://kenney.nl/media/pages/assets/input-prompts-pixel-1-bit/ba3f0202e6-1774771290/kenney_input-prompts-pixel-1-bit.zip"
 PIXEL_COLOR_ZIP_URL = "https://kenney.nl/media/pages/assets/input-prompts-pixel/84a40a31f6-1774771309/kenney_input-prompts-pixel.zip"
-PIXEL_1BIT_WEB_URL = "https://kenney.nl/assets/input-prompts-pixel-1-bit"    
+PIXEL_1BIT_WEB_URL  = "https://kenney.nl/assets/input-prompts-pixel-1-bit"    
 PIXEL_COLOR_WEB_URL = "https://kenney.nl/assets/input-prompts-pixel"
 def import_kenney_pixel():
     try:
@@ -239,7 +240,7 @@ def import_kenney_pixel():
     rows = load_csv(PIXEL_CSV_PATH)
     if restore_configs():
         write_macros()
-        apply_config_replacements(rows, "Asset Name")
+        apply_config_replacements(rows, CSV_FIELD_NAME)
 
     if yn("Use color icons?"):
         zip_url = PIXEL_COLOR_ZIP_URL
@@ -276,14 +277,14 @@ def import_font(csv_path, zip_url=None, license_url=None):
             webbrowser.open(license_url)
     print("Done")
 
-PROMPTFONT_CSV_PATH = "PromptFont2Input.csv"
-PROMPTFONT_ZIP_URL = "https://shinmera.com/project/promptfont/releases/download/latest/promptfont.zip"
+PROMPTFONT_CSV_PATH    = "PromptFont2Input.csv"
+PROMPTFONT_ZIP_URL     = "https://shinmera.com/project/promptfont/releases/download/latest/promptfont.zip"
 PROMPTFONT_LICENSE_URL = "https://shinmera.com/docs/promptfont/LICENSE.txt"
 def import_promptfont():
     import_font(PROMPTFONT_CSV_PATH, PROMPTFONT_ZIP_URL, PROMPTFONT_LICENSE_URL)
 
-MARUMONICA_CSV_PATH = "MaruMonica2Input.csv"
-MARUMONIA_ZIP_URL = "https://booth.pm/downloadables/7530579"
+MARUMONICA_CSV_PATH   = "MaruMonica2Input.csv"
+MARUMONIA_ZIP_URL     = "https://booth.pm/downloadables/7530579"
 MARUMONIA_LICENSE_URL = "https://hicchicc.github.io/00ff/"
 def import_marumonica():
     import_font(MARUMONICA_CSV_PATH, MARUMONIA_ZIP_URL, MARUMONIA_LICENSE_URL)
@@ -291,10 +292,10 @@ def import_marumonica():
 SOURCE_URL = "https://codeberg.org/offalynne/Input/raw/branch/main/"
 REMOTE_VERSION_PATH = SOURCE_URL + "scripts/__InputConstants/__InputConstants.gml"
 def restore_configs():
-    local = Path("../" + "/".join(REMOTE_VERSION_PATH.split("/")[-3:])).read_text(encoding="utf-8", errors="ignore")
+    local  = Path("../" + "/".join(REMOTE_VERSION_PATH.split("/")[-3:])).read_text(encoding="utf-8", errors="ignore")
     remote = urllib.request.urlopen(REMOTE_VERSION_PATH).read().decode("utf-8", errors="ignore")
 
-    ver_local = get_version(local)
+    ver_local  = get_version(local)
     ver_remote = get_version(remote)
     if ver_local != ver_remote:
         print("Input version mismatch")
@@ -310,13 +311,13 @@ def restore_configs():
 
 print("Choose icon set to import")
 choice = input(
-    "1. Kenney Vector: SVGs\n"
-    "2. Kenney Pixel: PNGs\n"
-    "3. PromptFont: Vector Font\n"
-    "4. MaruMonica: Pixel Font\n"
-    "5. Restore default Icon configs\n"
-    "6. Exit\n"
-    "> "
+    " 1. Kenney Vector: SVGs\n"
+    " 2. Kenney Pixel: PNGs\n"
+    " 3. PromptFont: Vector Font\n"
+    " 4. MaruMonica: Pixel Font\n"
+    " 5. Restore default Icon configs\n"
+    " 6. Exit\n"
+    ">"
 )
 if choice == "1":
     import_kenney_vector()
