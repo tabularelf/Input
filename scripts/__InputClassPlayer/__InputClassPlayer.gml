@@ -19,12 +19,17 @@ function __InputClassPlayer(_playerIndex) constructor
     __anyInput       = false;
     __lastInputTime  = -infinity;
     
+    //Most devices will block hotswap with any input. However, gamepads will not block hotswap for
+    //analogue (axis) input owing to the potential for false positives.
+    __hotswapBlocked = false;
+    __lastHotswapBlockedTime = -infinity;
+    
     //Set the last connected gamepad speculatively based on the platform / gamepad ban setting
     if (INPUT_BAN_GAMEPADS)
     {
         __lastConnectedGamepadType = INPUT_GAMEPAD_TYPE_NO_GAMEPAD;
     }
-    else if (INPUT_ON_SWITCH)
+    else if (INPUT_ON_SWITCH_X)
     {
         __lastConnectedGamepadType = INPUT_GAMEPAD_TYPE_SWITCH;
     }
@@ -90,6 +95,8 @@ function __InputClassPlayer(_playerIndex) constructor
     
     __consumedArray = [];
     
+    __UpdateClusterThresholds();
+    
     
     
     static __UpdateStatus = function()
@@ -121,6 +128,18 @@ function __InputClassPlayer(_playerIndex) constructor
         }
         
         return _connected;
+    }
+    
+    static __SetMinThreshold = function(_type, _value)
+    {
+        __thresholdMinArray[@ _type] = _value;
+        __thresholdMaxArray[@ _type] = max(_value, __thresholdMaxArray[_type]);
+    }
+    
+    static __SetMaxThreshold = function(_type, _value)
+    {
+        __thresholdMinArray[@ _type] = min(_value, __thresholdMinArray[_type]);
+        __thresholdMaxArray[@ _type] = _value;
     }
     
     static __UpdateClusterThresholds = function()
@@ -256,31 +275,11 @@ function __InputClassPlayer(_playerIndex) constructor
             }
             else
             {
-                //Scale down the x/y values so we can clamp output values between 0 and 1
+                //Scale down the x/y values so we clamp output values between 0 and 1. This should
+                //only matter if the player is combining boolean inputs (keyboard, dpad)
                 _dx /= max(1, _d);
                 _dy /= max(1, _d);
                 _d = min(1, _d);
-                
-                //If we're using a gamepad, apply thumbstick thresholds to the cluster. This ignores whether the
-                //player has actually used a thumbstick for input so is potentially problematic in unanticipated
-                //use cases.
-                if (__device >= 0)
-                {
-                    var _thresholdType = __clusterThresholdTypeArray[_i];
-                    
-                    var _a = __thresholdMinArray[_thresholdType];
-                    var _b = __thresholdMaxArray[_thresholdType];
-                    
-                    var _min = clamp(min(_a, _b), 0, 1);
-                    var _max = clamp(max(_a, _b), 0, 1);
-                    
-                    var _delta = _max - _min;
-                    if (_delta == 0) _delta = 0.001;
-                    
-                    var _coeff = clamp((_d - _min) / _delta, 0.0, 1.0);
-                    _dx = (_dx/_d)*_coeff;
-                    _dy = (_dy/_d)*_coeff;
-                }
                 
                 var _bias = _clusterDefinition.__axisBiasFactor;
                 if (_bias > 0)
@@ -313,6 +312,16 @@ function __InputClassPlayer(_playerIndex) constructor
             ++_i;
         }
         
-        if (__anyInput) __lastInputTime = current_time;
+        if (__anyInput)
+        {
+            __lastInputTime = current_time;
+            
+            //If we're not using a gamepad, block hotswap for any verb input. However, if we're using a gamepad
+            //then only allow hotswap if no digital (button) input is detected.
+            if ((__device < 0) || (__INPUT_GAMEPAD_AXIS_BLOCKS_HOTSWAP || __hotswapBlocked))
+            {
+                __lastHotswapBlockedTime = current_time;
+            }
+        }
     }
 }

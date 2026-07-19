@@ -1,8 +1,8 @@
 // Feather disable all
 
-if (INPUT_ON_SWITCH)
+if (INPUT_ON_SWITCH_X)
 {
-    switch_controller_joycon_set_holdtype(switch_controller_joycon_holdtype_horizontal);
+    switch_controller_start_lr_assignment();
 }
 
 bindingMap = ds_map_create();

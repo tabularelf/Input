@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 # Gamepad data refresher for Input
-# https://github.com/offalynne/Input, 2025
+# https://codeberg.org/offalynne/Input, 2025
 
 import sys
 if sys.version_info[0] != 3:
@@ -26,7 +26,7 @@ DATA_SOURCES = {
                 "match id": "MAKE_CONTROLLER_ID\((.*),(.*)\),k_eControllerType_" + marker_id + ",",
             },
             "Community SDL2 typelist": {
-                "source": github_urlpath + "offalynne/Input/community-data/community_gamepad_type.txt",
+                "source": "https://codeberg.org/offalynne/Input/raw/branch/community-data/community_gamepad_type.txt",
                 "match category": "(?<=.{10})(.{1,})(?= //.*)",
                 "match id": "(.{4}),(.{4})," + marker_id,
             }
@@ -50,7 +50,7 @@ GAMEPAD_TYPE_MAPPING = {
 
 # fetch gamecontrollerdb.txt
 script_dir = os.path.dirname(os.path.realpath(__file__))
-datafiles_dir = os.path.join(script_dir, "datafiles")
+datafiles_dir = os.path.join(script_dir, "../datafiles")
 os.makedirs(datafiles_dir, exist_ok=True)
 
 gamecontrollerdb_path = os.path.join(datafiles_dir, "gamecontrollerdb.txt")
@@ -62,10 +62,6 @@ try:
 
     	#strip ios maps
         text = response.read().decode().split("# iOS", 1)[0]
-
-        #remap dpad-only axis to thumbstick
-        #TODO: fixed upstream, deprecate upon 2024.14 monthly release
-        text = re.sub(r"dpdown:\+a(\d+),dpleft:-a(\d+),dpright:\+a\2,dpup:-a\1", r"leftx:a\2,lefty:a\1", text)
 
         open(gamecontrollerdb_path, 'w', encoding="utf-8").write(text.rstrip("\n") + "\n")
     print("\tSaved to " + gamecontrollerdb_path)
@@ -80,7 +76,7 @@ for file in DATA_SOURCES:
     filename = data_index.get("destination")
     sources = list(data_index.get("sources"))
 
-    working_path = os.path.join(script_dir, "scripts/__InputCreateTypeLookup", filename)
+    working_path = os.path.join(script_dir, "../scripts/__InputCreateTypeLookup", filename)
     if os.path.exists(working_path):
         os.remove(working_path)
     working_handle = open(working_path, "w")
